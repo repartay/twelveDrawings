@@ -1,0 +1,150 @@
+/*Page Styles
+====================*/
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #666699;
+	font-family: Lato, sans-serif, Helvetica;
+	font-size: .8em/1.2em;
+}
+
+.main-wrapper{
+	width: 90%;
+	margin: auto;
+}
+
+/* Layout Element Colors
+================================ */
+
+.main-header {background-color: black;}
+.main-logo {background-color: black;}
+.main-nav li {background-color: tomato;}
+.aside {background-color: lightblue;}
+.section {background-color: grey; color: white;}
+
+
+/* Header, Logo, Nav Layout 
+================================ */
+.main-header {
+	padding: 20px;
+	width: 100%;
+	min-height: 120px;
+	display: table;
+}
+
+.main-logo,
+.main-nav,
+.main-nav li {
+	display: inline-block;
+}
+
+.main-logo,
+.main-nav {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+.main-logo {
+	display: block;
+	text-align: left;
+	padding-right: 20px;
+
+}
+
+
+.main-nav {
+	padding-left: 50px;
+}
+
+
+.main-logo,
+.main-nav li {
+	border-radius: 5px;
+}
+
+.main-nav li {
+	margin-right: -5px;
+}
+
+
+.main-nav a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+
+/* Column Layout 
+================================ */
+.col {
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+}
+
+.aside {
+	width: 200px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+.section {
+	width: calc (100% - 200px);
+}
+
+/*Text Formatting
+=====================*/
+h1 {
+	font-size: 1.5em;
+	color: white;
+	padding-left: 20px;
+	line-height: 1.6em;
+	font-weight: thin;
+}
+h1 span {
+	font-size: 1.2em;
+	line-height: 2em;
+	color: white;
+}
+
+h2 {
+	font-size: 1.2em;
+	color: darkblue;
+
+}
+
+/*Inputs
+=====================*/
+.toggleSwitch {
+	position: absolute;
+}
+
+
+
+
+
+/* Media Queries
+================================ 
+
+
+	}
+
+.main-header .container {
+	margin-left:30px;
+}
+
+.main-wrapper {
+	column-count: 2;
+	height: 100%;
+}
+
+*/
