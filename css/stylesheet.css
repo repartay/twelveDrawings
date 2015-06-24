@@ -23,8 +23,8 @@ body {
 .main-header {background-color: black;}
 .main-logo {background-color: black;}
 .main-nav li {background-color: tomato;}
-.aside {background-color: lightblue;}
-.section {background-color: grey; color: white;}
+aside {background-color: lightblue;}
+section {background-color: grey; color: white;}
 
 
 /* Header, Logo, Nav Layout 
@@ -82,24 +82,65 @@ body {
 }
 
 
+
+/* Card Layout + Transform
+================================ */
+a.card {
+	border: 1px black;
+	display: block;
+	text-decoration: none;
+	width: 250px;
+	position: relative;
+}
+
+a.card img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a {
+
+
+}
+
+.text {
+	position: absolute;
+	top: 100%;
+	transition: all .5s;
+}
+
+main.text-mode .text {
+  transform: translateY(-100%);
+}
+
+main.image-mode .text {
+  transform: translateY(0%);
+}
+
 /* Column Layout 
 ================================ */
+
 .col {
-	display: inline-block;
-	padding: 20px;
-	vertical-align: top;
+	height: 100%;
 }
 
-.aside {
-	width: 200px;
-	padding-left: 20px;
-	padding-right: 10px;
-	padding-top: 20px;
+.col-left {
+	width: 240px;
+	float:left;
+	border: 1px solid gray;
+	padding: 0px 30px;
 }
 
-.section {
-	width: calc (100% - 200px);
+.col-right {
+	width: calc(90% - 240px);
+	float: right;
+	margin: 0px;
 }
+
+/* Carosel Layout 
+========================== */
+
 
 /*Text Formatting
 =====================*/
@@ -124,10 +165,59 @@ h2 {
 
 /*Inputs
 =====================*/
-.toggleSwitch {
-	position: absolute;
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
 }
 
+/*Need to revisit below to customize*/
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 100px;
+  height: 42px;
+  background-color: #darkblue;
+  border-radius: 30px;
+  transition: background 0.6s;
+}
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 60px;
+  transition: background 0.6s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 35px;
+  background-color: #dddddd;
+  border-radius: 30px;
+  transition: margin 0.6s, background 0.6s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #yellow;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px;
+  background-color: #blue;
+}
 
 
 
@@ -135,16 +225,3 @@ h2 {
 /* Media Queries
 ================================ 
 
-
-	}
-
-.main-header .container {
-	margin-left:30px;
-}
-
-.main-wrapper {
-	column-count: 2;
-	height: 100%;
-}
-
-*/
