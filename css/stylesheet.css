@@ -110,11 +110,10 @@ a {
 	transition: all .5s;
 }
 
-main.text-mode .text {
+.text-mode .text {
   transform: translateY(-100%);
 }
-
-main.image-mode .text {
+.image-mode .text {
   transform: translateY(0%);
 }
 
@@ -219,7 +218,13 @@ input.cmn-toggle-round-flat:checked + label:after {
   background-color: #blue;
 }
 
-
+/*Clearfix
+====================*/
+.clearfix:after {
+ content: "";
+ display: block;
+ clear: both;
+}
 
 
 /* Media Queries
