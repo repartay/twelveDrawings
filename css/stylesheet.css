@@ -132,7 +132,7 @@ a {
 }
 
 .col-right {
-	width: calc(90% - 240px);
+	width: calc(100% - 240px);
 	float: right;
 	margin: 0px;
 }
