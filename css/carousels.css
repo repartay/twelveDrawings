@@ -1,0 +1,31 @@
+/*Container for ALL Carousels
+====================*/
+.col-right{
+ 	text-align: center;
+}
+/*Horizontal Wrapper for EACH Carousel
+====================*/
+.carouselWrapper {
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+#carousel-one {
+
+}
+
+/*Horizontal Wrapper for EACH Carousel
+====================*/
+.card {
+
+}
+
+#step1 {
+
+}
+
+/*Card Class .hiddenCard
+====================*/
+
+/*Card Class .shownCard
+====================*/
