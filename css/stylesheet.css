@@ -8,9 +8,9 @@
 
 body {
 	margin: 0;
-	background-color: #666699;
+	background-color: #D2DAE3;
 	font-family: Lato, sans-serif, Helvetica;
-	font-size: .8em/1.2em;
+	font-size: .8em;
 }
 
 .main-wrapper{
@@ -23,7 +23,7 @@ body {
 
 .main-header {background-color: black;}
 .main-logo {background-color: black;}
-.main-nav li {background-color: 000;}
+.main-nav li {background-color: inherit;}
 aside {background-color: lightblue;}
 section {border: 2px black;
  color: white;}
@@ -117,7 +117,7 @@ section {border: 2px black;
 
 /*Horizontal Wrapper for EACH Carousel
 ========================== */
-.button {
+.carouselButton {
 	font-size: 80px;
 	position: absolute;
 	top: 50%;
@@ -125,15 +125,20 @@ section {border: 2px black;
 	z-index: 999;
 }
 
-.button i {
+.carouselButton i {
 	background-color: rgba(0,0,0,.5);
 	color: orange;
 	padding: 10px;
 
 }
 
-.button i:hover {
+.carouselButton i:hover {
 	background-color: rgba(0,0,0,.75);
+}
+
+.carouselButton i:hover {
+	background-color: rgba(0,0,0,.75);
+	cursor: pointer;
 }
 
 .left-button {
@@ -159,6 +164,7 @@ section {border: 2px black;
 	min-width: 200%;
 	overflow: hidden;
 }
+
 /* Card Layout (Image and Captions)
 ================================ */
 a.card {
@@ -298,3 +304,23 @@ input.cmn-toggle-round-flat:checked + label:after {
 /* Media Queries
 ================================ 
 
+/*Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+
+/*Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/*Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+
+}
+
+/*Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+
+}
