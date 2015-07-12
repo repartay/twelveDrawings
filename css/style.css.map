@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAGA,UAAW;EACV,WAAW,EAJI,qBAAc;EAK7B,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;;AAGjB,UAAW;EACV,WAAW,EAVI,qBAAc;EAW7B,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG;;AAGjB,KAAM;EACL,WAAW,EAfA,0BAAc;;ACG1B,UAAW;EACV,WAAW,EDLI,qBAAc;ECM7B,SAAS,EAAE,GAAG;EACd,WAAW,EAAE,GAAG",
-"sources": ["../scss/base/_typography.scss","../scss/style.scss"],
-"names": [],
-"file": "style.css"
-}

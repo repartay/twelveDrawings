@@ -1,0 +1,25 @@
+.col {
+	height: 100%;
+}
+
+.col-left {
+	width: 240px;
+	float:left;
+	border: 1px solid gray;
+	padding: 0px 30px;
+	background-color: lightblue;
+}
+
+
+.col-right {
+	width: calc(100% - 240px);
+	float: left;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column; 
+	border: 2px black;
+ 	color: white;
+}

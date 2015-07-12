@@ -1,0 +1,57 @@
+
+/* Header, Logo, Nav Layout 
+================================ */
+.main-header {
+	padding: 20px;
+	width: 100%;
+	min-height: 120px;
+	display: table;
+}
+
+.main-logo,
+.main-nav,
+.main-nav li {
+	display: inline-block;
+}
+
+.main-logo,
+.main-nav {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+.main-logo {
+	display: block;
+	text-align: left;
+	padding-right: 20px;
+
+}
+
+
+.main-nav {
+	padding-left: 50px;
+}
+
+
+.main-logo,
+.main-nav li {
+	border-radius: 5px;
+}
+
+.main-nav li {
+	margin-right: -5px;
+}
+
+
+.main-nav a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+
+

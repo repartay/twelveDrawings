@@ -1,0 +1,61 @@
+/*Inputs
+=====================*/
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+/*Need to revisit below to customize*/
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 100px;
+  height: 42px;
+  background-color: #darkblue;
+  border-radius: 30px;
+  transition: background 0.6s;
+}
+
+input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 60px;
+  transition: background 0.6s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 35px;
+  background-color: #dddddd;
+  border-radius: 30px;
+  transition: margin 0.6s, background 0.6s;
+}
+
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #yellow;
+}
+
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px;
+  background-color: #blue;
+}
