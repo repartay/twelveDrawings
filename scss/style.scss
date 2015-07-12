@@ -1,0 +1,11 @@
+@import "vendors/bourbon/_bourbon.scss";
+@import "helpers/_variables.scss";
+@import "base/_typography.scss";
+
+.main-logo {
+	font-family: $font-headline;
+	font-size: 2em;
+	line-height: 2em;
+}
+
+
