@@ -2,45 +2,50 @@
 <html>
 	<head>
 		<title>Twelve Drawings</title>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<meta charset="utf-8">
+
+		<!--Link Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700italic,700' rel='stylesheet' type='text/css'>
+
+		<!--Link Stylesheets-->
+		<link rel="stylesheet" type="text/css" href="css/application.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	</head>
+
 	<body class="image-mode">
-		<div class="main-wrapper clearfix">
+		<div class="main-wrapper">
+
 			<!--Top Nav Bar Container-->
 			<header class="main-header">
-				<h1 class="main-logo"><span>Twelve Drawings</span><br>1930s definitions of Twelve Steps words - plus recent illustrations</h1>
-				<!--Collapsing Nav Elements-->
-				<div class="navbar navbar-collapse">
-				<!--<ul class="main-nav">
-					<li><a href="#">Steps</a></li>
-					<li><a href="#">Promises</a></li>
-					<li><a href="#">Serenity</a></li>
-					<li><a href="#">Moments</a></li>
-				</ul>-->
+				<div class="toggle-wrapper">
+					<h1 class="main-logo">TWELVE   DRAWINGS</h1>
+						<div class="toggler"> 
+							<input id="cmn-toggle-round-flat" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+		  					<label for="cmn-toggle-round-flat"></label>
+						</div>
 				</div>
-				<div class="toggler"> 
-					<input id="cmn-toggle-round-flat" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-  					<label for="cmn-toggle-round-flat"></label>
+				<h2 class="main-splash">1930s definitions of<br><span>Twelve Step words</span><br><br>accompanied by<br> <span>new illustrations</span></h2>
 				</div>
 			</header> 
 
-			<!--Left Column Aside-->
+			<!--Left Column Aside
 			<aside class="col col-left">
-				<h2>Steps</h2>
+				<h1>Steps</h1>
 				<p>When possible, the steps were worked with the help of a sover sponsor. Still, in the early days, many people recovered by following the written literature alone.</p><br>
 				<h2>Promises</h2>
 				<p>In the description of Step Nine, there is a long paragraph listing benefits that can be expected in recovery. These have come affectionatley to be known as the Twelve Promises.</p><br>
-				<h2>Serenity Words</h2>
+				<h1>Serenity Words</h1>
 				<p>Years after the steps were written, another set of principles were published. Known as the "Traditions", they guide Twelve Steps groups toward cohesiveness.</p><br>
-				<h2>Moments</h2>
+				<h1>Moments</h1>
 				<p>In the literature, several stories were used to sum up...</p>
-			</aside>
+			</aside> -->
 
 			<!--open right column/container for all carousels-->
 			<section class="col col-right">
+				<div class="carousel-label label-one">
+					<p>Twelve Steps</p>
+				</div>
 
 				<!--open .carouselOuterWrapper-->
 				<div class="carouselOuterWrapper">
@@ -67,6 +72,7 @@
 								Adhibenda est munditia, non odiosa neque exquisita nimis.
 							</div> <!--close card #step1-->
 						</a>
+
 							<a href="#" class="card" id="step2">
 							<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
 							<div class="cardText">
@@ -154,6 +160,9 @@
 						<i class="fa fa-angle-right"></i>
 					</a>
 					<!--close carousel-one buttons-->
+			<div class="carousel-label label-two">
+					<p>Twelve Promises</p>
+				</div>
 
 				</div><!--close carouselOuterWrapper-->
 

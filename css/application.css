@@ -1,0 +1,226 @@
+/*Page Styles
+====================*/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: #dbdbdb;
+  font: 0.8em "Merriweather", Helvetica, sans-serif; }
+
+.main-wrapper {
+  width: 100%;
+  margin: auto; }
+
+h1 {
+  font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
+  color: white;
+  padding-left: 20px;
+  line-height: 1.6em; }
+
+h2 {
+  text-align: center;
+  color: #c2e0ff;
+  font: 1.8em/1em "Josefin Slab", Times, serif; }
+  h2 span {
+    font: normal 2em/1.6em "Josefin Slab", Times, serif; }
+
+p {
+  text-align: left;
+  font: 600 3em/1.5em "Josefin Slab", Times, serif;
+  padding-left: 3%;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 40px; }
+
+.label-one p {
+  color: #2f4550; }
+
+.label-two p {
+  color: #5f464b; }
+
+.cmn-toggle-round-flat {
+  font: 1.8em/1em "Josefin Slab", Times, serif; }
+
+.col {
+  height: 100%; }
+
+section {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 2px black;
+  color: white; }
+
+.main-header {
+  width: 100%;
+  display: table;
+  background: url(../img/door_bg.jpg) no-repeat center;
+  background-size: cover; }
+
+.main-logo {
+  background-color: #1c0f13;
+  text-align: left;
+  margin: auto;
+  padding: 1em; }
+
+.main-splash {
+  padding-bottom: 25%;
+  padding-top: 18%; }
+
+.carouselOuterWrapper {
+  position: relative;
+  overflow: hidden; }
+
+.carouselInnerWrapper {
+  position: relative;
+  max-height: 500px;
+  margin: 0;
+  min-width: 200%;
+  overflow: hidden;
+  margin-bottom: 20px; }
+
+.main-wrapper:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*Button for each carousel
+========================== */
+.carouselButton {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999; }
+
+.carouselButton i {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: orange;
+  padding: 20px; }
+
+.carouselButton i:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer; }
+
+.left-button {
+  left: 0; }
+
+.right-button {
+  right: 0; }
+
+/*Card Class .hiddenCard
+====================*/
+/*Card Class .shownCard
+====================*/
+/* Card Layout (Image and Captions)
+================================ */
+a.card {
+  border: 1px black;
+  display: inline-block;
+  text-decoration: none;
+  height: 100%;
+  position: relative;
+  float: left;
+  margin-left: 10px; }
+
+a.card img {
+  display: inline-block;
+  width: auto;
+  max-height: 500px; }
+
+.cardText {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  transition: all .5s;
+  color: blue; }
+
+.text-mode .cardText {
+  transform: translateY(-100%); }
+
+.image-mode .cardText {
+  transform: translateY(0%); }
+
+/*Inputs
+=====================*/
+.toggler {
+  position: absolute;
+  top: 30px;
+  right: 8%; }
+
+.cmn-toggle {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  visibility: hidden; }
+
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none; }
+
+/*Need to revisit below to customize*/
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 100px;
+  height: 42px;
+  background-color: #darkblue;
+  border-radius: 30px;
+  transition: background 0.6s; }
+
+input.cmn-toggle-round-flat + label:before {
+  display: block;
+  position: absolute;
+  content: "OFF"; }
+
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: ""; }
+
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #afb2bc;
+  border-radius: 50px;
+  transition: background 0.6s; }
+
+input.cmn-toggle-round-flat + label:after {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 40px;
+  background-color: #2f4550;
+  border-radius: 30px;
+  transition: margin 0.6s, background 0.6s; }
+
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #yellow; }
+
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px;
+  background-color: #blue; }
+
+/* Media Queries
+================================ */
+/*Extra Small Devices, Phones */
+/*Small Devices, Tablets */
+/*Medium Devices, Desktops */
+/*Large Devices, Wide Screens */
+/*Clearfix
+====================*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*# sourceMappingURL=application.css.map */
