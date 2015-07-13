@@ -2,20 +2,23 @@
 ========================== */
 
 .carouselButton {
-	font-size: 80px;
+	font-size: 60px;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	z-index: 999;
-	& i {
-		background-color: rgba(0,0,0,.5);
-		color: orange;
-		padding: 10px;
-		&:hover {
-			background-color: rgba(0,0,0,.75);
-			cursor: pointer;
-			}
-		}
+	z-index: 999;		
+}
+
+
+.carouselButton i {
+	background-color: rgba(0,0,0,.5);
+	color: orange;
+	padding: 20px;
+}
+
+.carouselButton i:hover {
+	background-color: rgba(0,0,0,.75);
+	cursor: pointer;
 }
 
 .left-button {

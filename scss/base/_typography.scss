@@ -1,5 +1,5 @@
 h1 {
-	font: 100 2em/1.6em $stack-slab;
+	font: 100 2.5em/1.6em $stack-slab;
 	color: white;
 	padding-left: 20px;
 	line-height: 1.6em;
@@ -9,14 +9,30 @@ h1 {
 h2 {
 	text-align: center;
 	color: rgb(194, 224, 255);
-	font: 1.5em/1em $stack-slab;
+	font: 1.8em/1em $stack-slab;
 	
 	& span {
-		font: normal 1.5em/1.6em $stack-slab;
-		
-	
+		font: normal 2em/1.6em $stack-slab;
 	}
 }
 
+p {
+	text-align: left;
+	font: 600 3em/1.5em $stack-slab;
+	padding-left: 3%;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	margin-top: 40px;
+}
 
+.label-one p{
+	color: rgba(47,69,80,1);
+} 
+
+.label-two p{
+	color: rgba(95,70,75,1);
+} 
+.cmn-toggle-round-flat {
+	font: 1.8em/1em $stack-slab;
+}
 

@@ -13,7 +13,7 @@ body {
   margin: auto; }
 
 h1 {
-  font: 100 2em/1.6em "Josefin Slab", Times, serif;
+  font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
   color: white;
   padding-left: 20px;
   line-height: 1.6em; }
@@ -21,23 +21,32 @@ h1 {
 h2 {
   text-align: center;
   color: #c2e0ff;
-  font: 1.5em/1em "Josefin Slab", Times, serif; }
+  font: 1.8em/1em "Josefin Slab", Times, serif; }
   h2 span {
-    font: normal 1.5em/1.6em "Josefin Slab", Times, serif; }
+    font: normal 2em/1.6em "Josefin Slab", Times, serif; }
+
+p {
+  text-align: left;
+  font: 600 3em/1.5em "Josefin Slab", Times, serif;
+  padding-left: 3%;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 40px; }
+
+.label-one p {
+  color: #2f4550; }
+
+.label-two p {
+  color: #5f464b; }
+
+.cmn-toggle-round-flat {
+  font: 1.8em/1em "Josefin Slab", Times, serif; }
 
 .col {
   height: 100%; }
 
-.col-left {
-  width: 240px;
-  float: left;
-  border: 1px solid gray;
-  padding: 0px 30px;
-  background-color: lightblue; }
-
-.col-right {
-  width: calc(100% - 240px);
-  float: left;
+section {
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
@@ -49,20 +58,19 @@ h2 {
 
 .main-header {
   width: 100%;
-  height: 600px;
   display: table;
   background: url(../img/door_bg.jpg) no-repeat center;
   background-size: cover; }
 
 .main-logo {
-  display: block;
   background-color: #1c0f13;
   text-align: left;
   margin: auto;
   padding: 1em; }
 
 .main-splash {
-  padding-top: 30%; }
+  padding-bottom: 25%;
+  padding-top: 18%; }
 
 .carouselOuterWrapper {
   position: relative;
@@ -73,7 +81,8 @@ h2 {
   max-height: 500px;
   margin: 0;
   min-width: 200%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 20px; }
 
 .main-wrapper:after {
   content: "";
@@ -83,18 +92,20 @@ h2 {
 /*Button for each carousel
 ========================== */
 .carouselButton {
-  font-size: 80px;
+  font-size: 60px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 999; }
-  .carouselButton i {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: orange;
-    padding: 10px; }
-    .carouselButton i:hover {
-      background-color: rgba(0, 0, 0, 0.75);
-      cursor: pointer; }
+
+.carouselButton i {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: orange;
+  padding: 20px; }
+
+.carouselButton i:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  cursor: pointer; }
 
 .left-button {
   left: 0; }
@@ -137,9 +148,15 @@ a.card img {
 
 /*Inputs
 =====================*/
+.toggler {
+  position: absolute;
+  top: 30px;
+  right: 8%; }
+
 .cmn-toggle {
   position: absolute;
-  margin-left: -9999px;
+  top: -10px;
+  right: 10px;
   visibility: hidden; }
 
 .cmn-toggle + label {
@@ -158,7 +175,11 @@ input.cmn-toggle-round-flat + label {
   border-radius: 30px;
   transition: background 0.6s; }
 
-input.cmn-toggle-round-flat + label:before,
+input.cmn-toggle-round-flat + label:before {
+  display: block;
+  position: absolute;
+  content: "OFF"; }
+
 input.cmn-toggle-round-flat + label:after {
   display: block;
   position: absolute;
@@ -169,16 +190,16 @@ input.cmn-toggle-round-flat + label:before {
   left: 2px;
   bottom: 2px;
   right: 2px;
-  background-color: #fff;
-  border-radius: 60px;
+  background-color: #afb2bc;
+  border-radius: 50px;
   transition: background 0.6s; }
 
 input.cmn-toggle-round-flat + label:after {
   top: 2px;
   left: 2px;
   bottom: 2px;
-  width: 35px;
-  background-color: #dddddd;
+  width: 40px;
+  background-color: #2f4550;
   border-radius: 30px;
   transition: margin 0.6s, background 0.6s; }
 
