@@ -1,0 +1,28 @@
+.carouselOuterWrapper {
+	position: relative;
+	padding-right: 40px;
+	padding-left: 40px;
+	overflow:hidden;
+	padding-top:20px;
+
+
+}
+
+.carouselInnerWrapper {
+	@extend %clearfix;
+	position: relative;
+	max-height: 500px;
+	
+
+
+	
+
+
+	//min-width: 200%;
+	//overflow: hidden;
+	//margin-bottom: 20px;
+	//@include breakpoint (xs) {
+	//	max-height: none;
+	//	overflow:auto;
+	//	position: static;
+}

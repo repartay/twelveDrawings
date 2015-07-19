@@ -1,56 +1,37 @@
-var cardWidth,
-	carouselPos;
-
-var numCards = 12,
-	carouselWrap = $('.carouselWrapper'),
-	carousel = $('.carousel'),
-	leftBtn = $('.left-btn'),
-	rightBtn = $('.right-btn');
-
-
-console.log(cardWidth);
-
-// Make function for event .resize on $(window) {
-	var cardWidth = $('.card').outerHeight();
-
-//}
-
-//apply attr('data-position', '1') to each carousel
-
-//event: leftBtn.click {
-	//this button parent .carousel {
-		//var oldPos = .carousel.attr('data-position');
-		//var currentPos = oldPos - 1;
-		//set data-attribute data-position = currentPos;
-		//fire function setPos(carousel);
-	//}
-//}
-
-//event: rightBtn.click {
-	//this button parent .carousel {
-		//var oldPos = .carousel.attr('data-position');
-		//var currentPos = oldPos + 1;
-		//set data-attribute data-position = currentPos;
-		//fire function setPos(carousel);
-	//}
-//}
-
-// var setPos = function(carousel) {
-
-//}
-
-//Click function
-
-$('body').on('click', function() {
-	var currentPos = $('.carousel').attr('data-position');
-	var currentPosNum = parseInt( currentPos, 10 ); 
-	var	newPos = currentPosNum + 1;
-
-		console.log(newPos);
-
-	$('.carousel').attr('data-position', newPos);
+$(document).ready(function(){
+  $('.carouselInnerWrapper').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  });
 });
-
 
 
 

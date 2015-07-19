@@ -1,0 +1,84 @@
+/*Card Class .hiddenCard
+====================*/
+
+/*Card Class .shownCard
+====================*/
+
+/* Card Layout (Image and Captions)
+
+================================ */
+
+
+.cardWrapper {
+	display: inline-block;
+	text-decoration: none;
+	//max-height: 300px;
+	position: relative;
+	width: 216px;
+	float: left;
+	margin-left:10px;
+	overflow: hidden;
+}
+
+a.card img {
+	//display: inline-block;
+	height: 100px;
+	width: auto;
+/*--
+	
+	@include breakpoint (sm) {
+		height: 200px;
+		width: auto;
+	}
+	@include breakpoint (md) {
+		height: 300px;
+		width: auto;
+	}
+	
+	@include breakpoint (lg) {
+		height: 400px;
+		width: auto;
+--*/
+}
+
+
+
+
+/*---.accordianText {
+	position: relative;
+	background: rgba(47,69,80,1);
+	color: white;
+	font: 2em $stack-slab;
+	width: 100%;
+}--*/
+
+
+#carousel-one .cardText {
+	position: absolute;
+	background-color: rgba(47,69,80,.7);
+	margin: auto;
+	color: white;
+	height: 100%;
+	font: 100 1em/1.5em $stack-slab;
+	padding: 5%;
+
+}
+
+#carousel-two .cardText {
+	position: absolute;
+	background-color: rgba(95,70,75,1);
+	margin: auto;
+	color: white;
+	height: 100%;
+	font: 100 1em/1.5em $stack-slab;
+	padding: 5%;
+
+}
+.text-mode .cardText {
+  transform: translateY(-100%);
+  transition-duration: 1s;
+}
+.image-mode .cardText {
+  transform: translateY(0%);
+  transition-duration: 1.7s;
+}

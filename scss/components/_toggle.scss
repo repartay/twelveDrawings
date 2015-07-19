@@ -1,0 +1,97 @@
+/*Inputs
+=====================*/
+.toggler {
+  position: absolute;
+  top: 30px;
+  right: 8%;
+}
+
+.cmn-toggle {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  visibility: hidden;
+
+}
+
+.cmn-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+/*Need to revisit below to customize*/
+
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 100px;
+  height: 42px;
+  background-color: #darkblue;
+  border-radius: 30px;
+  transition: background 0.6s;
+  z-index: 5;
+}
+
+input.cmn-toggle-round-flat + label:before{
+  display: block;
+  position: absolute;
+  content: "";
+  
+}
+
+input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+.toggler .off{
+  font-size: 1.25em;
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+
+}
+
+
+.toggler .on{
+  font-size: 1.25em;
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+  
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: rgba(175, 178, 188,1);
+  border-radius: 50px;
+  transition: background 0.6s;
+  z-index: 0;
+
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 40px;
+  background-color: rgba(47,69,80,1);
+  border-radius: 30px;
+  transition: margin 0.6s, background 0.6s;
+}
+
+input.cmn-toggle-round-flat:checked + label {
+  background-color: yellow;
+
+
+}
+
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px;
+  background-color: blue;
+
+}

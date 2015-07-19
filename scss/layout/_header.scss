@@ -1,0 +1,28 @@
+
+.main-header {
+	margin-bottom: 0;
+	max-width: 100%;
+	
+}
+
+.main-logo {
+	background-color: $gondola;
+	margin: auto;
+	padding: 1em;
+	text-align: left;
+}
+
+.main-splash {
+	padding-bottom: 25%;
+	background: url(../img/door_bg.jpg) no-repeat center;
+	background-size: cover;
+	@include breakpoint (md) {
+		display: none;
+	}
+	
+	h2 {
+		margin-top: 0;
+	}
+}
+
+
