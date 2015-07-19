@@ -39,11 +39,10 @@ h2 {
 }
 
 p {
-	font: 600 2.5em $stack-slab;
+	font: 500 2.5em $stack-slab;
 	margin-bottom: 5px;
-	margin-top: 40px;
+	margin-top: 20px;
 	padding-left: 3%;
-	padding-bottom: 5px;
 	text-align: left;
 }
 
@@ -54,7 +53,6 @@ p {
 .label-two p{
 	color: rgba(95,70,75,.8);
 } 
-
 .cmn-toggle-round-flat {
 	font: 1.8em/1em $stack-slab;
 }

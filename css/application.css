@@ -1,3 +1,5 @@
+/*Media Queries===
+=================================*/
 /*Page Styles
 ====================*/
 * {
@@ -17,7 +19,8 @@ h1 {
   font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
   line-height: 1em;
   max-width: 400px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  /*Extra Small Devices, Phones */ }
   @media (min-width: 900px) {
     h1 {
       padding: 1em;
@@ -30,7 +33,8 @@ h1 {
   position: absolute;
   right: 250px;
   top: -10px;
-  visibility: hidden; }
+  visibility: hidden;
+  /*Extra Small Devices, Phones */ }
   @media (min-width: 900px) {
     .logo-wrapper p {
       height: 100%;
@@ -48,11 +52,10 @@ h2 {
     font: normal 200 2em/1.4em "Josefin Slab", Times, serif; }
 
 p {
-  font: 600 2.5em "Josefin Slab", Times, serif;
+  font: 500 2.5em "Josefin Slab", Times, serif;
   margin-bottom: 5px;
-  margin-top: 40px;
+  margin-top: 20px;
   padding-left: 3%;
-  padding-bottom: 5px;
   text-align: left; }
 
 .label-one p {
@@ -87,7 +90,8 @@ section {
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 0; }
+  margin: 0;
+  /*Extra Small Devices, Phones */ }
   @media (min-width: 900px) {
     .logo-wrapper {
       background: url(../img/door_bg.jpg) center;
@@ -96,8 +100,10 @@ section {
 .main-splash {
   padding-bottom: 20%;
   background: url(../img/door_bg.jpg) no-repeat center;
-  background-size: cover; }
-  @media (min-width: 600px) {
+  background-size: cover;
+  /*Extra Small Devices, Phones */
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 650px) {
     .main-splash {
       height: 300px; } }
   @media (min-width: 900px) {
@@ -112,7 +118,7 @@ section {
   padding-right: 40px;
   padding-left: 40px;
   overflow: hidden;
-  padding-top: 20px; }
+  padding-top: 15px; }
 
 .carouselInnerWrapper {
   position: relative;
@@ -186,30 +192,37 @@ section {
   display: inline-block;
   text-decoration: none;
   position: relative;
-  width: 216px;
-  float: left;
-  margin-left: 10px;
-  overflow: hidden; }
+  text-align: center;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 250px;
+  height: auto;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 650px) {
+    .cardWrapper {
+      width: 100%; } }
 
 a.card img {
-  height: 100px;
-  width: auto;
-  /*--
-  	
-  	@include breakpoint (sm) {
-  		height: 200px;
-  		width: auto;
-  	}
-  	@include breakpoint (md) {
-  		height: 300px;
-  		width: auto;
-  	}
-  	
-  	@include breakpoint (lg) {
-  		height: 400px;
-  		width: auto;
-  --*/ }
+  width: 250px;
+  height: auto;
+  position: relative;
+  border: none; }
 
+/*--}
+	
+	@include breakpoint (sm) {
+		height: 200px;
+		width: auto;
+	}
+	@include breakpoint (md) {
+		height: 300px;
+		width: auto;
+	}
+	
+	@include breakpoint (lg) {
+		height: 400px;
+		width: auto;
+--*/
 /*---.accordianText {
 	position: relative;
 	background: rgba(47,69,80,1);
@@ -219,21 +232,22 @@ a.card img {
 }--*/
 #carousel-one .cardText {
   position: absolute;
-  background-color: rgba(47, 69, 80, 0.7);
+  background-color: rgba(47, 69, 80, 0.8);
   margin: auto;
   color: white;
-  height: 100%;
-  font: 100 1em/1.5em "Josefin Slab", Times, serif;
-  padding: 5%; }
+  height: 90%;
+  font: 600 1.7em/1.5em "Josefin Slab", Times, serif;
+  width: 250px;
+  padding: 1em; }
 
 #carousel-two .cardText {
   position: absolute;
-  background-color: #5f464b;
+  background-color: rgba(95, 70, 75, 0.7);
   margin: auto;
   color: white;
-  height: 100%;
+  height: 90%;
   font: 100 1em/1.5em "Josefin Slab", Times, serif;
-  padding: 5%; }
+  width: 250px; }
 
 .text-mode .cardText {
   transform: translateY(-100%);
@@ -249,8 +263,9 @@ a.card img {
   position: absolute;
   top: 30px;
   right: 8%;
-  visibility: hidden; }
-  @media (min-width: 600px) {
+  visibility: hidden;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 650px) {
     .toggler {
       visibility: visible; } }
 
@@ -324,18 +339,5 @@ input.cmn-toggle-round-flat:checked + label {
 input.cmn-toggle-round-flat:checked + label:after {
   margin-left: 60px;
   background-color: blue; }
-
-/* Media Queries
-================================ */
-/*Extra Small Devices, Phones */
-/*Small Devices, Tablets */
-/*Medium Devices, Desktops */
-/*Large Devices, Wide Screens */
-/*Clearfix
-====================*/
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both; }
 
 /*# sourceMappingURL=application.css.map */
