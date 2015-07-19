@@ -13,31 +13,53 @@ body {
   margin: auto; }
 
 h1 {
-  font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
   color: white;
-  padding-left: 20px;
-  line-height: 1.6em; }
+  font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
+  line-height: 1em;
+  max-width: 400px;
+  padding-left: 20px; }
+  @media (min-width: 900px) {
+    h1 {
+      padding: 1em;
+      padding-bottom: 20px; } }
+
+.logo-wrapper p {
+  color: rgba(194, 224, 255, 0.6);
+  float: left;
+  font: 1em/0.7em bold "Raleway Dots" sans-serif;
+  position: absolute;
+  right: 250px;
+  top: -10px;
+  visibility: hidden; }
+  @media (min-width: 900px) {
+    .logo-wrapper p {
+      height: 100%;
+      visibility: visible; } }
+  .logo-wrapper p span {
+    color: #c2e0ff;
+    font: 2em/1.5em 'Raleway Dots' sans-serif; }
 
 h2 {
-  text-align: center;
   color: #c2e0ff;
-  font: 1.8em/1em "Josefin Slab", Times, serif; }
+  font: 200 1.7em/1em "Josefin Slab", Times, serif;
+  padding-top: 40px;
+  text-align: center; }
   h2 span {
-    font: normal 2em/1.6em "Josefin Slab", Times, serif; }
+    font: normal 200 2em/1.4em "Josefin Slab", Times, serif; }
 
 p {
-  text-align: left;
-  font: 600 3em/1.5em "Josefin Slab", Times, serif;
+  font: 600 2.5em "Josefin Slab", Times, serif;
+  margin-bottom: 5px;
+  margin-top: 40px;
   padding-left: 3%;
   padding-bottom: 5px;
-  margin-bottom: 10px;
-  margin-top: 40px; }
+  text-align: left; }
 
 .label-one p {
-  color: #2f4550; }
+  color: rgba(47, 69, 80, 0.8); }
 
 .label-two p {
-  color: #5f464b; }
+  color: rgba(95, 70, 75, 0.8); }
 
 .cmn-toggle-round-flat {
   font: 1.8em/1em "Josefin Slab", Times, serif; }
@@ -60,19 +82,28 @@ section {
   margin-bottom: 0;
   max-width: 100%; }
 
-.main-logo {
+.logo-wrapper {
   background-color: #1c0f13;
-  margin: auto;
-  padding: 1em;
-  text-align: left; }
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0; }
+  @media (min-width: 900px) {
+    .logo-wrapper {
+      background: url(../img/door_bg.jpg) center;
+      background-size: 40%; } }
 
 .main-splash {
-  padding-bottom: 25%;
+  padding-bottom: 20%;
   background: url(../img/door_bg.jpg) no-repeat center;
   background-size: cover; }
-  @media (min-width: 992px) {
+  @media (min-width: 600px) {
     .main-splash {
-      display: none; } }
+      height: 300px; } }
+  @media (min-width: 900px) {
+    .main-splash {
+      display: none;
+      height: auto; } }
   .main-splash h2 {
     margin-top: 0; }
 
@@ -99,13 +130,13 @@ section {
   color: rgba(58, 64, 90, 0.75); }
 
 #carousel-one .slick-dots li button:before {
-  color: rgba(58, 64, 90, 0.25); }
+  color: rgba(58, 64, 90, 0.5); }
 
 #carousel-two .slick-dots li.slick-active button:before {
   color: rgba(95, 70, 75, 0.75); }
 
 #carousel-two .slick-dots li button:before {
-  color: rgba(95, 70, 75, 0.25); }
+  color: rgba(95, 70, 75, 0.5); }
 
 /* Arrows */
 #carousel-one .slick-prev:before,
@@ -217,7 +248,11 @@ a.card img {
 .toggler {
   position: absolute;
   top: 30px;
-  right: 8%; }
+  right: 8%;
+  visibility: hidden; }
+  @media (min-width: 600px) {
+    .toggler {
+      visibility: visible; } }
 
 .cmn-toggle {
   position: absolute;
