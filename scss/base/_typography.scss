@@ -1,36 +1,57 @@
 h1 {
-	font: 100 2.5em/1.6em $stack-slab;
 	color: white;
+	font: 100 2.5em/1.6em $stack-slab;
+	line-height: 1em;
+	max-width: 400px;
 	padding-left: 20px;
-	line-height: 1.6em;
+	@include breakpoint (md) {
+		padding: 1em;
+		padding-bottom:20px;
+	}
+}
 
+.logo-wrapper p {
+	color: rgba(194, 224, 255, .6);
+	float: left;
+	font: 1em/.7em bold'Raleway Dots' sans-serif;
+	position: absolute;
+	right: 250px;
+	top: -10px;
+	visibility: hidden;
+	@include breakpoint (md) {
+		height: 100%;
+		visibility: visible;	
+	}
+	& span {
+		color: rgba(194, 224, 255, 1);
+		font: 2em/1.5em 'Raleway Dots' sans-serif;
+	}
 }
 
 h2 {
-	text-align: center;
 	color: rgb(194, 224, 255);
-	font: 1.8em/1em $stack-slab;
-	
+	font: 200 1.7em/1em $stack-slab;
+	padding-top:40px;
+	text-align: center;
 	& span {
-		font: normal 2em/1.6em $stack-slab;
+		font: normal 200 2em/1.4em $stack-slab;
 	}
 }
 
 p {
-	text-align: left;
-	font: 600 3em/1.5em $stack-slab;
+	font: 500 2.5em $stack-slab;
+	margin-bottom: 5px;
+	margin-top: 20px;
 	padding-left: 3%;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-	margin-top: 40px;
+	text-align: left;
 }
 
 .label-one p{
-	color: rgba(47,69,80,1);
+	color: rgba(47,69,80,.8);
 } 
 
 .label-two p{
-	color: rgba(95,70,75,1);
+	color: rgba(95,70,75,.8);
 } 
 .cmn-toggle-round-flat {
 	font: 1.8em/1em $stack-slab;

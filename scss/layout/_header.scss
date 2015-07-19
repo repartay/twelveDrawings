@@ -2,27 +2,41 @@
 .main-header {
 	margin-bottom: 0;
 	max-width: 100%;
-	
+}
+
+
+.logo-wrapper {
+	background-color: $gondola;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0;
+	@include breakpoint (md) {
+		background: url(../img/door_bg.jpg) center;
+		background-size: 40%;
+	}
 }
 
 .main-logo {
-	background-color: $gondola;
-	margin: auto;
-	padding: 1em;
-	text-align: left;
 }
-
 .main-splash {
-	padding-bottom: 25%;
+	padding-bottom: 20%;
 	background: url(../img/door_bg.jpg) no-repeat center;
 	background-size: cover;
+	@include breakpoint (sm) {
+		height: 300px;
+
+	}
 	@include breakpoint (md) {
 		display: none;
+		height: auto;
 	}
 	
 	h2 {
 		margin-top: 0;
 	}
 }
+
+
 
 

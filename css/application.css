@@ -1,3 +1,5 @@
+/*Media Queries===
+=================================*/
 /*Page Styles
 ====================*/
 * {
@@ -13,31 +15,54 @@ body {
   margin: auto; }
 
 h1 {
-  font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
   color: white;
+  font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
+  line-height: 1em;
+  max-width: 400px;
   padding-left: 20px;
-  line-height: 1.6em; }
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 900px) {
+    h1 {
+      padding: 1em;
+      padding-bottom: 20px; } }
+
+.logo-wrapper p {
+  color: rgba(194, 224, 255, 0.6);
+  float: left;
+  font: 1em/0.7em bold "Raleway Dots" sans-serif;
+  position: absolute;
+  right: 250px;
+  top: -10px;
+  visibility: hidden;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 900px) {
+    .logo-wrapper p {
+      height: 100%;
+      visibility: visible; } }
+  .logo-wrapper p span {
+    color: #c2e0ff;
+    font: 2em/1.5em 'Raleway Dots' sans-serif; }
 
 h2 {
-  text-align: center;
   color: #c2e0ff;
-  font: 1.8em/1em "Josefin Slab", Times, serif; }
+  font: 200 1.7em/1em "Josefin Slab", Times, serif;
+  padding-top: 40px;
+  text-align: center; }
   h2 span {
-    font: normal 2em/1.6em "Josefin Slab", Times, serif; }
+    font: normal 200 2em/1.4em "Josefin Slab", Times, serif; }
 
 p {
-  text-align: left;
-  font: 600 3em/1.5em "Josefin Slab", Times, serif;
+  font: 500 2.5em "Josefin Slab", Times, serif;
+  margin-bottom: 5px;
+  margin-top: 20px;
   padding-left: 3%;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-  margin-top: 40px; }
+  text-align: left; }
 
 .label-one p {
-  color: #2f4550; }
+  color: rgba(47, 69, 80, 0.8); }
 
 .label-two p {
-  color: #5f464b; }
+  color: rgba(95, 70, 75, 0.8); }
 
 .cmn-toggle-round-flat {
   font: 1.8em/1em "Josefin Slab", Times, serif; }
@@ -60,19 +85,31 @@ section {
   margin-bottom: 0;
   max-width: 100%; }
 
-.main-logo {
+.logo-wrapper {
   background-color: #1c0f13;
-  margin: auto;
-  padding: 1em;
-  text-align: left; }
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 900px) {
+    .logo-wrapper {
+      background: url(../img/door_bg.jpg) center;
+      background-size: 40%; } }
 
 .main-splash {
-  padding-bottom: 25%;
+  padding-bottom: 20%;
   background: url(../img/door_bg.jpg) no-repeat center;
-  background-size: cover; }
-  @media (min-width: 992px) {
+  background-size: cover;
+  /*Extra Small Devices, Phones */
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 650px) {
     .main-splash {
-      display: none; } }
+      height: 300px; } }
+  @media (min-width: 900px) {
+    .main-splash {
+      display: none;
+      height: auto; } }
   .main-splash h2 {
     margin-top: 0; }
 
@@ -81,7 +118,7 @@ section {
   padding-right: 40px;
   padding-left: 40px;
   overflow: hidden;
-  padding-top: 20px; }
+  padding-top: 15px; }
 
 .carouselInnerWrapper {
   position: relative;
@@ -99,13 +136,13 @@ section {
   color: rgba(58, 64, 90, 0.75); }
 
 #carousel-one .slick-dots li button:before {
-  color: rgba(58, 64, 90, 0.25); }
+  color: rgba(58, 64, 90, 0.5); }
 
 #carousel-two .slick-dots li.slick-active button:before {
   color: rgba(95, 70, 75, 0.75); }
 
 #carousel-two .slick-dots li button:before {
-  color: rgba(95, 70, 75, 0.25); }
+  color: rgba(95, 70, 75, 0.5); }
 
 /* Arrows */
 #carousel-one .slick-prev:before,
@@ -155,30 +192,37 @@ section {
   display: inline-block;
   text-decoration: none;
   position: relative;
-  width: 216px;
-  float: left;
-  margin-left: 10px;
-  overflow: hidden; }
+  text-align: center;
+  overflow: hidden;
+  margin-right: 10px;
+  width: 250px;
+  height: auto;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 650px) {
+    .cardWrapper {
+      width: 100%; } }
 
 a.card img {
-  height: 100px;
-  width: auto;
-  /*--
-  	
-  	@include breakpoint (sm) {
-  		height: 200px;
-  		width: auto;
-  	}
-  	@include breakpoint (md) {
-  		height: 300px;
-  		width: auto;
-  	}
-  	
-  	@include breakpoint (lg) {
-  		height: 400px;
-  		width: auto;
-  --*/ }
+  width: 250px;
+  height: auto;
+  position: relative;
+  border: none; }
 
+/*--}
+	
+	@include breakpoint (sm) {
+		height: 200px;
+		width: auto;
+	}
+	@include breakpoint (md) {
+		height: 300px;
+		width: auto;
+	}
+	
+	@include breakpoint (lg) {
+		height: 400px;
+		width: auto;
+--*/
 /*---.accordianText {
 	position: relative;
 	background: rgba(47,69,80,1);
@@ -188,21 +232,22 @@ a.card img {
 }--*/
 #carousel-one .cardText {
   position: absolute;
-  background-color: rgba(47, 69, 80, 0.7);
+  background-color: rgba(47, 69, 80, 0.8);
   margin: auto;
   color: white;
-  height: 100%;
-  font: 100 1em/1.5em "Josefin Slab", Times, serif;
-  padding: 5%; }
+  height: 90%;
+  font: 600 1.7em/1.5em "Josefin Slab", Times, serif;
+  width: 250px;
+  padding: 1em; }
 
 #carousel-two .cardText {
   position: absolute;
-  background-color: #5f464b;
+  background-color: rgba(95, 70, 75, 0.7);
   margin: auto;
   color: white;
-  height: 100%;
+  height: 90%;
   font: 100 1em/1.5em "Josefin Slab", Times, serif;
-  padding: 5%; }
+  width: 250px; }
 
 .text-mode .cardText {
   transform: translateY(-100%);
@@ -217,7 +262,12 @@ a.card img {
 .toggler {
   position: absolute;
   top: 30px;
-  right: 8%; }
+  right: 8%;
+  visibility: hidden;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 650px) {
+    .toggler {
+      visibility: visible; } }
 
 .cmn-toggle {
   position: absolute;
@@ -289,18 +339,5 @@ input.cmn-toggle-round-flat:checked + label {
 input.cmn-toggle-round-flat:checked + label:after {
   margin-left: 60px;
   background-color: blue; }
-
-/* Media Queries
-================================ */
-/*Extra Small Devices, Phones */
-/*Small Devices, Tablets */
-/*Medium Devices, Desktops */
-/*Large Devices, Wide Screens */
-/*Clearfix
-====================*/
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both; }
 
 /*# sourceMappingURL=application.css.map */

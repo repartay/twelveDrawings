@@ -4,6 +4,10 @@
   position: absolute;
   top: 30px;
   right: 8%;
+  visibility: hidden;
+  @include breakpoint (sm){
+  visibility: visible;
+  }
 }
 
 .cmn-toggle {
