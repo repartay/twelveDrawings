@@ -1,31 +1,65 @@
-/*Button for each carousel
+
+/*Slick BUTTON OVERRIDES 
 ========================== */
 
-.carouselButton {
-	font-size: 60px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 999;		
+/* Dots */
+
+#carousel-one .slick-dots li.slick-active button:before
+{
+    color: rgba(58,64,90,.75);
 }
 
-
-.carouselButton i {
-	background-color: rgba(0,0,0,.5);
-	color: orange;
-	padding: 20px;
+#carousel-one .slick-dots li button:before
+{
+    color: rgba(58,64,90,.25);
 }
 
-.carouselButton i:hover {
-	background-color: rgba(0,0,0,.75);
-	cursor: pointer;
+#carousel-two .slick-dots li.slick-active button:before
+{
+    color: rgba(95,70,75,.75);
 }
 
-.left-button {
-	left: 0;
+#carousel-two .slick-dots li button:before
+{
+    color: rgba(95,70,75,.25);
 }
 
+/* Arrows */
+#carousel-one .slick-prev:before,
+#carousel-one .slick-next:before
+{
+    color: rgba(58,64,90,.75);
 
-.right-button {
-	right: 0;
+    &:hover, &:focus {
+        outline: none;
+        background: transparent;
+        color: transparent;
+        &:before {
+            opacity: 1;
+        }
+    }
+    &.slick-disabled:before {
+        opacity: 0.25;
+    }
+}
+
+#carousel-two .slick-prev:before,
+#carousel-two .slick-next:before
+{
+    color: rgba(95,70,75,0.75);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:hover, &:focus {
+        outline: none;
+        background: transparent;
+        color: transparent;
+        &:before {
+            color: rgba(95,70,75,1);
+        }
+    }
+    &.slick-disabled:before {
+        	color: rgba(95,70,75,0.25);
+    }
 }

@@ -2,15 +2,26 @@
 <html>
 	<head>
 		<title>Twelve Drawings</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--Link Fonts-->
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,600' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700italic,700' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,600" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,700italic,700" rel="stylesheet" type="text/css">
+
+		<!--Link FontAwesome-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+		<!--Link Slick Stylesheet-->
+		<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
 
 		<!--Link Stylesheets-->
 		<link rel="stylesheet" type="text/css" href="css/application.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		
+	
+
+		
 	</head>
 
 	<body class="image-mode">
@@ -21,11 +32,17 @@
 				<div class="toggle-wrapper">
 					<h1 class="main-logo">TWELVE   DRAWINGS</h1>
 						<div class="toggler"> 
-							<input id="cmn-toggle-round-flat" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+							
+							<input id="cmn-toggle-round-flat" class="cmn-toggle cmn-toggle-round-flat" type="checkbox"	>
+
 		  					<label for="cmn-toggle-round-flat"></label>
+		  					<span class="off">OFF</span>
+							<span class="on">ON</span>
 						</div>
 				</div>
-				<h2 class="main-splash">1930s definitions of<br><span>Twelve Step words</span><br><br>accompanied by<br> <span>new illustrations</span></h2>
+				<div class="main-splash">
+					<h2>1930s definitions of<br><span>Twelve Step words</span><br><br>accompanied by<br> <span>new illustrations</span></h2>
+				</div>
 				</div>
 			</header> 
 
@@ -43,211 +60,339 @@
 
 			<!--open right column/container for all carousels-->
 			<section class="col col-right">
+
+				<!--open LABEL for CAROUSEL-ONE-->
 				<div class="carousel-label label-one">
 					<p>Twelve Steps</p>
 				</div>
 
-				<!--open .carouselOuterWrapper-->
-				<div class="carouselOuterWrapper">
+				<!--open CAROUSEL-ONE 			OUTER wrapper-->
+				<div class="carouselOuterWrapper outerOne">
 
-					<!--carousel indicators MAY NOT USE
-					
-				<ol class="carousel-indicators">
-					<li class="active" data-target="#carousel-one" data-slide-to="0"></li>
-					<li data-target="#carousel-one" data-slide-to="1"></li>
-					<li data-target="#carousel-one" data-slide-to="2"></li>
-					<li data-target="#carousel-one" data-slide-to="3"></li>
-					<li data-target="#carousel-one" data-slide-to="12"></li>
-				</ol>
+				<!--open slick CAROUSEL-ONE 	INNER wrapper-->
+					<div id="carousel-one" class="carouselInnerWrapper">
 
-				-->
+						<!--open slick item CAROUSEL-ONE CARD 1-->
+						<div class="cardWrapper powerless"> 
+								
+							<a href="#" class="card" id="step1">
+								<img src="img/step1_powerless.jpg" alt="Step 1 Powerless. 	adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab." />
+								<!--open cardText-->
+								<div class="cardText">POWERLESS <br> adjective. <br><br>	Destitute of the ability (whether physical, mental, or moral) to act.
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
 
-				<!--open #carousel-one wrapper-->
-						<div id="carousel-one" class="carouselInnerWrapper">
+						<!--open accordian card 1
+						<a href="#" class="accordianText accordian1"> Step 1 Powerless. adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab.
+						</a>-->
+
+						<!--open slick item CAROUSEL-ONE CARD 2-->
+						<div class="cardWrapper restore"> 
+
+								<a href="#" class="card" id="step2">
+									<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
+									<!--open cardText-->
+									<div class="cardText">Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new.
+									</div> <!--close cardText-->
+								</a>
+							</div> <!--close slick item CARD 2-->
+
+
+						<!--open slick item CAROUSEL-ONE CARD 3-->
+						<div class="cardWrapper decision"> 
 						
-						<!--open card #step1-->
-						<a href="#" class="card" id="step1">
-							<img src="img/step1_powerless.jpg" alt="Step 1 Powerless. adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab." />
-							<div class="cardText">
+							<a href="#" class="card" id="step3">
+								<img src="img/step3_decision.jpg" alt="Step 3. Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks. A woman stands on one of the forks and points, directing the train to the other track." />
+								<!--open cardText-->
+								<div class="cardText">Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks.
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 3-->
+
+						<!--open slick item CAROUSEL-ONE CARD 4-->
+						<div class="cardWrapper inventory"> 
+
+							<a href="#" class="card" id="step4">
+								<img src="img/step4_inventory.jpg" alt="Step 4. Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person. Drawing shows a completed inventory form, totally up the belongings of the deceased, Miranda Wright." />
+								<!--open cardText-->
+								<div class="cardText">Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person.
+								</div> <!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 4-->
+							
+						<!--open slick item CAROUSEL-ONE CARD 5-->
+						<div class="cardWrapper admit">
+
+							<a href="#" class="card" id="step5">
+								<img src="img/step5_admit.jpg" alt="Step 5 Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors. A smaller door within one of the doors is open, letting in a ray of light." />
+								<!--open cardText-->
+								<div class="cardText"> Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 5-->
+							
+						<!--open slick item CAROUSEL-ONE CARD 6-->
+						<div class="cardWrapper ready">
+
+							<a href="#" class="card" id="step6">
+								<img src="img/step6_ready.jpg" alt="Step 6 Ready. adjective. Prepared for what one is about to do or experience. Drawing shows a squirrel in mid-air with its lil arms outstretched." />
+								<!--open cardText-->
+								<div class="cardText">Ready. adjective. Prepared for what one is about to do or experience.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 6-->
+
+						<!--open slick item CAROUSEL-ONE CARD 7-->
+						<div class="cardWrapper remove">
+
+							<a href="#" class="card" id="step7">
+								<img src="img/step7_remove.jpg" alt="Step 7 Remove. verb. To change or shift a location, position, station or residence of. Drawing a close up of a full sink or bathtub drain, the plug of which has just been pulled, allowing air bubbles up." />
+								<!--open cardText-->
+								<div class="cardText">Remove. verb. To change or shift a location, position, station or residence of. 
+								</div> 
+								<!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 7-->
+
+						<!--open slick item CAROUSEL-ONE CARD 8-->
+						<div class="cardWrapper harm">
+
+							<a href="#" class="card" id="step8">
+								<img src="img/step8_harm.jpg" alt="Step 8 Harm. verb. To hurt. Drawing shows the severed head of a flower on a sidewalk in the foreground. The headless plant is in the background." />
+								<!--open cardText-->
+								<div class="cardText">Harm. verb. To hurt.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 8-->
+
+						<!--open slick item CAROUSEL-ONE CARD 9-->
+						<div class="cardWrapper amends">
+							<a href="#" class="card" id="step9">
+								<img src="img/step9_amends.jpg" alt="Step 9 Amends. noun. Compensation for loss or injury. Drawing shows a hand holding a paintbrush, painting a new picket in a white fence. The broken picket sits in the foreground." />
+								<!--open cardText-->
+								<div class="cardText">Amends. noun. Compensation for loss or injury.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 9-->
+						
+						<!--open slick item CAROUSEL-ONE CARD 10-->
+						<div class="cardWrapper continue">
+
+							<a href="#" class="card" id="step10">
+								<img src="img/step10_continue.jpg" alt="Step 10 Continue. verb. To remain ina  given place or condition. Drawing shows a chaotic household scene, a fallen lamp, a spilled pitcher, and a hissing cat perched atop a large dog happily sleeping."/>
+								<!--open cardText-->
+								<div class="cardText">Continue. verb. To remain ina  given place or condition.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 10-->
+						
+						<!--open slick item CAROUSEL-ONE CARD 11-->
+						<div class="cardWrapper conscious">
+
+							<a href="#" class="card" id="step11">
+								<img src="img/step11_conscious.jpg" alt="Step 11. Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies. Drawing shows a woman with a young boy sitting on her lap. They are reading a book together and their fingers touch on the page." />
+								<!--open cardText-->
+								<div class="cardText">Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 11-->
+
+						<!--open slick item CAROUSEL-ONE CARD 12-->
+						<div class="cardWrapper spiritual">
+
+							<a href="#" class="card" id="step12">
+								<img src="img/step12_spiritual.jpg" alt="Step 12. Spiritual. adjuective. Of, pertaining to, or consisting of the breath of life. Drawing shows a man underwater. He appears in a joyful pose on his way up to the surface." />
+								<!--open cardText-->
+								<div class="cardText">
 								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div> <!--close card #step1-->
-						</a>
+								</div>
+							</a>
+						</div><!--close slick item CARD 12-->
 
-							<a href="#" class="card" id="step2">
-							<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+					</div><!--close CAROUSEL-ONE 	INNER wrapper-->
 
-						<a href="#" class="card" id="step3">
-							<img src="img/step3_decision.jpg" alt="Step 3. Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks. A woman stands on one of the forks and points, directing the train to the other track." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step4">
-							<img src="img/step4_inventory.jpg" alt="Step 4. Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person. Drawing shows a completed inventory form, totally up the belongings of the deceased, Miranda Wright." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step5">
-							<img src="img/step5_admit.jpg" alt="Step 5 Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors. A smaller door within one of the doors is open, letting in a ray of light." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step6">
-							<img src="img/step6_ready.jpg" alt="Step 6 Ready. adjective. Prepared for what one is about to do or experience. Drawing shows a squirrel in mid-air with its lil arms outstretched." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step7">
-							<img src="img/step7_remove.jpg" alt="Step 7 Remove. verb. To change or shift a location, position, station or residence of. Drawing a close up of a full sink or bathtub drain, the plug of which has just been pulled, allowing air bubbles up." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step8">
-							<img src="img/step8_harm.jpg" alt="Step 8 Harm. verb. To hurt. Drawing shows the severed head of a flower on a sidewalk in the foreground. The headless plant is in the background." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step9">
-							<img src="img/step9_amends.jpg" alt="Step 9 Amends. noun. Compensation for loss or injury. Drawing shows a hand holding a paintbrush, painting a new picket in a white fence. The broken picket sits in the foreground." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step10">
-							<img src="img/step10_continue.jpg" alt="Step 10 Continue. verb. To remain ina  given place or condition. Drawing shows a chaotic household scene, a fallen lamp, a spilled pitcher, and a hissing cat perched atop a large dog happily sleeping." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step11">
-							<img src="img/step11_conscious.jpg" alt="Step 11. Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies. Drawing shows a woman with a young boy sitting on her lap. They are reading a book together and their fingers touch on the page." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step12">
-							<img src="img/step12_spiritual.jpg" alt="Step 12. Spiritual. adjuective. Of, pertaining to, or consisting of the breath of life. Drawing shows a man underwater. He appears in a joyful pose on his way up to the surface." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-					</div><!--close #carousel-one inner wrapper-->
-
-					<!--open carousel-one buttons-->
+					<!--open carousel-one buttons
 					<a class="carouselButton left-button" href="#carousel-one" data-slide="prev">
 						<i class="fa fa-angle-left"></i>
 					</a>
 					<a class="carouselButton right-button" href="#carousel-one" data-slide="next">	
 						<i class="fa fa-angle-right"></i>
-					</a>
-					<!--close carousel-one buttons-->
-			<div class="carousel-label label-two">
+					</a>close carousel-one buttons-->
+					
+					</div><!--close CAROUSEL-ONE 	OUTER wrapper-->
+
+
+
+
+
+
+				<!--open LABEL for CAROUSEL-TWO-->
+				<div class="carousel-label label-two">
 					<p>Twelve Promises</p>
 				</div>
+				
+				<!--open CAROUSEL-TWO			OUTER wrapper-->
+				<div class="carouselOuterWrapper outerTwo">
 
-				</div><!--close carouselOuterWrapper-->
 
-				<!--open #carousel-two wrapper-->
+				<!--open slick CAROUSEL-TWO 	INNER wrapper-->
 				<div id="carousel-two" class="carouselInnerWrapper">
-					<!--open card #step1-->
-					<a href="#" class="card" id="step1">
-						<img src="img/step1_powerless.jpg" alt="Step 1 Powerless. adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div> <!--close card #step1-->
-					</a>
-						<a href="#" class="card" id="step2">
-						<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-						<a href="#" class="card" id="step3">
-						<img src="img/step3_decision.jpg" alt="Step 3. Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks. A woman stands on one of the forks and points, directing the train to the other track." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step4">
-						<img src="img/step4_inventory.jpg" alt="Step 4. Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person. Drawing shows a completed inventory form, totally up the belongings of the deceased, Miranda Wright." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step5">
-						<img src="img/step5_admit.jpg" alt="Step 5 Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors. A smaller door within one of the doors is open, letting in a ray of light." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step6">
-						<img src="img/step6_ready.jpg" alt="Step 6 Ready. adjective. Prepared for what one is about to do or experience. Drawing shows a squirrel in mid-air with its lil arms outstretched." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step7">
-						<img src="img/step7_remove.jpg" alt="Step 7 Remove. verb. To change or shift a location, position, station or residence of. Drawing a close up of a full sink or bathtub drain, the plug of which has just been pulled, allowing air bubbles up." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step8">
-						<img src="img/step8_harm.jpg" alt="Step 8 Harm. verb. To hurt. Drawing shows the severed head of a flower on a sidewalk in the foreground. The headless plant is in the background." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step9">
-						<img src="img/step9_amends.jpg" alt="Step 9 Amends. noun. Compensation for loss or injury. Drawing shows a hand holding a paintbrush, painting a new picket in a white fence. The broken picket sits in the foreground." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step10">
-						<img src="img/step10_continue.jpg" alt="Step 10 Continue. verb. To remain ina  given place or condition. Drawing shows a chaotic household scene, a fallen lamp, a spilled pitcher, and a hissing cat perched atop a large dog happily sleeping." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step11">
-						<img src="img/step11_conscious.jpg" alt="Step 11. Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies. Drawing shows a woman with a young boy sitting on her lap. They are reading a book together and their fingers touch on the page." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step12">
-						<img src="img/step12_spiritual.jpg" alt="Step 12. Spiritual. adjuective. Of, pertaining to, or consisting of the breath of life. Drawing shows a man underwater. He appears in a joyful pose on his way up to the surface." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-				</div> <!--close carousel-two wrapper-->
+
+					<!--open slick item CAROUSEL-TWO CARD 1-->
+						<div class="cardWrapper powerless"> 
+								
+							<a href="#" class="card" id="step1">
+								<img src="img/step1_powerless.jpg" alt="Step 1 Powerless. 		adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab." />
+								<!--open cardText-->
+								<div class="cardText">Powerless. adjective. Destitute of the ability (whether physical, mental, or moral) to act.
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+
+						<!--open accordian card 1
+						<a href="#" class="accordianText accordian1"> Step 1 Powerless. adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab.
+						</a>-->
+
+						<!--open slick item CAROUSEL-TWO CARD 2-->
+						<div class="cardWrapper restore"> 
+
+								<a href="#" class="card" id="step2">
+									<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
+									<!--open cardText-->
+									<div class="cardText">Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new.
+									</div> <!--close cardText-->
+								</a>
+							</div> <!--close slick item CARD 2-->
+
+
+						<!--open slick item CAROUSEL-TWO CARD 3-->
+						<div class="cardWrapper decision"> 
+						
+							<a href="#" class="card" id="step3">
+								<img src="img/step3_decision.jpg" alt="Step 3. Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks. A woman stands on one of the forks and points, directing the train to the other track." />
+								<!--open cardText-->
+								<div class="cardText">Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks.
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 3-->
+
+						<!--open slick item CAROUSEL-TWO CARD 4-->
+						<div class="cardWrapper inventory"> 
+
+							<a href="#" class="card" id="step4">
+								<img src="img/step4_inventory.jpg" alt="Step 4. Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person. Drawing shows a completed inventory form, totally up the belongings of the deceased, Miranda Wright." />
+								<!--open cardText-->
+								<div class="cardText">Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person.
+								</div> <!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 4-->
+							
+						<!--open slick item CAROUSEL-TWO CARD 5-->
+						<div class="cardWrapper admit">
+
+							<a href="#" class="card" id="step5">
+								<img src="img/step5_admit.jpg" alt="Step 5 Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors. A smaller door within one of the doors is open, letting in a ray of light." />
+								<!--open cardText-->
+								<div class="cardText"> Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 5-->
+							
+						<!--open slick item CAROUSEL-TWO CARD 6-->
+						<div class="cardWrapper ready">
+
+							<a href="#" class="card" id="step6">
+								<img src="img/step6_ready.jpg" alt="Step 6 Ready. adjective. Prepared for what one is about to do or experience. Drawing shows a squirrel in mid-air with its lil arms outstretched." />
+								<!--open cardText-->
+								<div class="cardText">Ready. adjective. Prepared for what one is about to do or experience.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 6-->
+
+						<!--open slick item CAROUSEL-TWO CARD 7-->
+						<div class="cardWrapper remove">
+
+							<a href="#" class="card" id="step7">
+								<img src="img/step7_remove.jpg" alt="Step 7 Remove. verb. To change or shift a location, position, station or residence of. Drawing a close up of a full sink or bathtub drain, the plug of which has just been pulled, allowing air bubbles up." />
+								<!--open cardText-->
+								<div class="cardText">Remove. verb. To change or shift a location, position, station or residence of. 
+								</div> 
+								<!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 7-->
+
+						<!--open slick item CAROUSEL-TWO CARD 8-->
+						<div class="cardWrapper harm">
+
+							<a href="#" class="card" id="step8">
+								<img src="img/step8_harm.jpg" alt="Step 8 Harm. verb. To hurt. Drawing shows the severed head of a flower on a sidewalk in the foreground. The headless plant is in the background." />
+								<!--open cardText-->
+								<div class="cardText">Harm. verb. To hurt.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 8-->
+
+						<!--open slick item CAROUSEL-TWO CARD 9-->
+						<div class="cardWrapper amends">
+							<a href="#" class="card" id="step9">
+								<img src="img/step9_amends.jpg" alt="Step 9 Amends. noun. Compensation for loss or injury. Drawing shows a hand holding a paintbrush, painting a new picket in a white fence. The broken picket sits in the foreground." />
+								<!--open cardText-->
+								<div class="cardText">Amends. noun. Compensation for loss or injury.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 9-->
+						
+						<!--open slick item CAROUSEL-TWO CARD 10-->
+						<div class="cardWrapper continue">
+
+							<a href="#" class="card" id="step10">
+								<img src="img/step10_continue.jpg" alt="Step 10 Continue. verb. To remain ina  given place or condition. Drawing shows a chaotic household scene, a fallen lamp, a spilled pitcher, and a hissing cat perched atop a large dog happily sleeping."/>
+								<!--open cardText-->
+								<div class="cardText">Continue. verb. To remain ina  given place or condition.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 10-->
+						
+						<!--open slick item CAROUSEL-TWO CARD 11-->
+						<div class="cardWrapper conscious">
+
+							<a href="#" class="card" id="step11">
+								<img src="img/step11_conscious.jpg" alt="Step 11. Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies. Drawing shows a woman with a young boy sitting on her lap. They are reading a book together and their fingers touch on the page." />
+								<!--open cardText-->
+								<div class="cardText">Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 11-->
+
+						<!--open slick item CAROUSEL-TWO CARD 12-->
+						<div class="cardWrapper spiritual">
+
+							<a href="#" class="card" id="step12">
+								<img src="img/step12_spiritual.jpg" alt="Step 12. Spiritual. adjuective. Of, pertaining to, or consisting of the breath of life. Drawing shows a man underwater. He appears in a joyful pose on his way up to the surface." />
+								<!--open cardText-->
+								<div class="cardText">
+								Adhibenda est munditia, non odiosa neque exquisita nimis.
+								</div>
+							</a>
+						</div><!--close slick item CARD 12-->
+
+				</div> <!--close carousel-two  INNER wrapper-->
+			</div> <!--close carousel-two  OUTER wrapper-->
+
 				
 			</section> <!--close Right Column-->
 
 		</div> <!--close "main wrapper"-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
-		<script src="js/toggle.js"></script>
-		<script src="js/slider.js"></script>
+		 
+		
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+ 		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+
+		<script type="text/javascript" src="js/toggle.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
 	</body>
 	</body>
