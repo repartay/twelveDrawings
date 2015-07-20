@@ -1,57 +1,29 @@
-/*Card Class .hiddenCard
-====================*/
-
-/*Card Class .shownCard
-====================*/
-
 /* Card Layout (Image and Captions)
 
 ================================ */
-
-
 .cardWrapper {
 	display: inline-block;
-	text-decoration: none;
+	border-display: none;
+	border-radius: 0;
+	height: auto;
+	margin-right: 10px;
+	overflow: hidden;
 	position: relative;
 	text-align: center;
-	overflow: hidden;
-	margin-right: 10px;
+	text-decoration: none;
 	width: 250px;
-	height: auto;
-	
 	@include breakpoint (sm) {
-		width: 100%;
-		
+		width: 100%;	
+		}
 	}
-
-}
 
 a.card img {
-	//display: inline-block;
-	width:250px;
+	border-display: none;
+	border-radius: 0;
 	height: auto;
 	position: relative;
-	border: none;
-}
-/*--}
-	
-	@include breakpoint (sm) {
-		height: 200px;
-		width: auto;
+	width:250px;
 	}
-	@include breakpoint (md) {
-		height: 300px;
-		width: auto;
-	}
-	
-	@include breakpoint (lg) {
-		height: 400px;
-		width: auto;
---*/
-
-
-
-
 
 /*---.accordianText {
 	position: relative;
@@ -61,36 +33,28 @@ a.card img {
 	width: 100%;
 }--*/
 
-
 #carousel-one .cardText {
-	position: absolute;
-	background-color: rgba(47,69,80,.8);
 	margin: auto;
-	color: white;
 	height: 90%;
-	font: 600 1.7em/1.5em $stack-slab;
-	width: 250px;
 	padding: 1em;
-
-
-
-}
+	position: absolute;
+	width: 250px;
+	}
 
 #carousel-two .cardText {
-	position: absolute;
-	background-color: rgba(95,70,75,.7);
 	margin: auto;
-	color: white;
 	height: 90%;
-	font: 100 1em/1.5em $stack-slab;
+	padding: 1em;
+	position: absolute;
 	width: 250px;
+	}
 
-}
 .text-mode .cardText {
   transform: translateY(-100%);
   transition-duration: 1s;
-}
+	}
+
 .image-mode .cardText {
   transform: translateY(0%);
   transition-duration: 1.7s;
-}
+	}

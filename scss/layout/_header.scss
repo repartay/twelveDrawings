@@ -4,25 +4,37 @@
 	max-width: 100%;
 }
 
-
 .logo-wrapper {
 	background-color: $gondola;
 	padding-left: 10px;
+	margin: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin: 0;
 	@include breakpoint (md) {
 		background: url(../img/door_bg.jpg) center;
 		background-size: 40%;
 	}
 }
 
+.logo-wrapper p {
+	float: left;
+	position: absolute;
+	right: 250px;
+	top: 0px;
+	visibility: hidden;
+	@include breakpoint (md) {
+		height: 100%;
+		visibility: visible;	
+	}
+}
+
 .main-logo {
 }
+
 .main-splash {
-	padding-bottom: 20%;
 	background: url(../img/door_bg.jpg) no-repeat center;
 	background-size: cover;
+	padding-bottom: 20%;
 	@include breakpoint (sm) {
 		height: 300px;
 
@@ -31,7 +43,6 @@
 		display: none;
 		height: auto;
 	}
-	
 	h2 {
 		margin-top: 0;
 	}

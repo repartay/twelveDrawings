@@ -1,17 +1,15 @@
 .col {
 	height: 100%;
-}
-
-
+	}
 
 section {
-	width: 90%;
-	height: 100%;
-	margin: 0 auto;
-	text-align: center;
-	position: relative;
+	border: 2px black;
+	color: white;
 	display: flex;
 	flex-direction: column; 
-	border: 2px black;
- 	color: white;
-}
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 90%;
+	}
