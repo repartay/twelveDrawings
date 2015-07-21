@@ -6,14 +6,17 @@
 	border-display: none;
 	border-radius: 0;
 	height: auto;
-	margin-right: 10px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
-	width: 250px;
-	@include breakpoint (sm) {
-		width: 100%;	
+	width: 300px;
+	@include breakpoint (xs) {
+		display: block;
+		height: auto;
+		margin-right: 10px;
+		width: 150px;
+		overflow: visible;
 		}
 	}
 
@@ -22,7 +25,10 @@ a.card img {
 	border-radius: 0;
 	height: auto;
 	position: relative;
-	width:250px;
+	width: 300px;
+@include breakpoint (xs) {
+		width: 150px;
+		}
 	}
 
 /*---.accordianText {
@@ -34,19 +40,19 @@ a.card img {
 }--*/
 
 #carousel-one .cardText {
-	margin: auto;
 	height: 90%;
+	margin: auto;
 	padding: 1em;
 	position: absolute;
-	width: 250px;
+	width: 150px;
 	}
 
 #carousel-two .cardText {
-	margin: auto;
 	height: 90%;
+	margin: auto;
 	padding: 1em;
 	position: absolute;
-	width: 250px;
+	width: 150px;
 	}
 
 .text-mode .cardText {

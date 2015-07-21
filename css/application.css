@@ -61,13 +61,13 @@ p {
 
 #carousel-one .cardText {
   color: white;
-  font: 600 1.7em/1.5em "Josefin Slab", Times, serif;
-  background-color: rgba(47, 69, 80, 0.8); }
+  font: 100 1em/1.1em "Josefin Slab", Times, serif;
+  background-color: rgba(47, 69, 80, 0.85); }
 
 #carousel-two .cardText {
   background-color: rgba(95, 70, 75, 0.8);
   color: white;
-  font: 600 1.7em/1.5em "Josefin Slab", Times, serif; }
+  font: 100 1.2em/1.5em "Josefin Slab", Times, serif; }
 
 .col {
   height: 100%; }
@@ -128,15 +128,19 @@ section {
     margin-top: 0; }
 
 .carouselOuterWrapper {
+  overflow: hidden;
   position: relative;
   padding-top: 15px;
   padding-right: 40px;
-  padding-left: 40px;
-  overflow: hidden; }
+  padding-left: 40px; }
 
 .carouselInnerWrapper {
-  max-height: 500px;
-  position: relative; }
+  height: auto;
+  position: relative;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    .carouselInnerWrapper {
+      max-height: 500px; } }
 
 .main-wrapper:after, .carouselInnerWrapper:after {
   content: "";
@@ -205,23 +209,30 @@ section {
   border-display: none;
   border-radius: 0;
   height: auto;
-  margin-right: 10px;
   overflow: hidden;
   position: relative;
   text-align: center;
   text-decoration: none;
-  width: 250px;
+  width: 300px;
   /*Extra Small Devices, Phones */ }
-  @media (min-width: 650px) {
+  @media (min-width: 500px) {
     .cardWrapper {
-      width: 100%; } }
+      display: block;
+      height: auto;
+      margin-right: 10px;
+      width: 150px;
+      overflow: visible; } }
 
 a.card img {
   border-display: none;
   border-radius: 0;
   height: auto;
   position: relative;
-  width: 250px; }
+  width: 300px;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    a.card img {
+      width: 150px; } }
 
 /*---.accordianText {
 	position: relative;
@@ -231,18 +242,18 @@ a.card img {
 	width: 100%;
 }--*/
 #carousel-one .cardText {
-  margin: auto;
   height: 90%;
+  margin: auto;
   padding: 1em;
   position: absolute;
-  width: 250px; }
+  width: 150px; }
 
 #carousel-two .cardText {
-  margin: auto;
   height: 90%;
+  margin: auto;
   padding: 1em;
   position: absolute;
-  width: 250px; }
+  width: 150px; }
 
 .text-mode .cardText {
   transform: translateY(-100%);
@@ -334,5 +345,23 @@ input.cmn-toggle-round-flat:checked + label {
 input.cmn-toggle-round-flat:checked + label:after {
   background-color: blue;
   margin-left: 60px; }
+
+#overlay {
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 650px) {
+    #overlay {
+      display: block; } }
+
+#overlay img {
+  height: 80%;
+  margin-top: 5%; }
 
 /*# sourceMappingURL=application.css.map */

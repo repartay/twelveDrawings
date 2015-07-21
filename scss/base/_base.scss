@@ -4,13 +4,11 @@
 	box-sizing: border-box;
 	}
 
-
 body {
 	margin: 0;
 	background-color: $alto;
 	font: .8em $stack-mer;
 	}
-
 
 .main-wrapper{
 	@extend %clearfix;

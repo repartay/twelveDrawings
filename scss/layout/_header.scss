@@ -2,7 +2,7 @@
 .main-header {
 	margin-bottom: 0;
 	max-width: 100%;
-}
+	}
 
 .logo-wrapper {
 	background-color: $gondola;
@@ -13,8 +13,8 @@
 	@include breakpoint (md) {
 		background: url(../img/door_bg.jpg) center;
 		background-size: 40%;
+		}
 	}
-}
 
 .logo-wrapper p {
 	float: left;
@@ -25,11 +25,10 @@
 	@include breakpoint (md) {
 		height: 100%;
 		visibility: visible;	
+		}
 	}
-}
 
-.main-logo {
-}
+
 
 .main-splash {
 	background: url(../img/door_bg.jpg) no-repeat center;
@@ -37,16 +36,15 @@
 	padding-bottom: 20%;
 	@include breakpoint (sm) {
 		height: 300px;
-
-	}
+		}
 	@include breakpoint (md) {
 		display: none;
 		height: auto;
-	}
+		}
 	h2 {
 		margin-top: 0;
+		}
 	}
-}
 
 
 

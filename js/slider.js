@@ -3,34 +3,47 @@ $(document).ready(function(){
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 4,
+  slidesToShow: 6,
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1204,
+      breakpoint: 1100,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
-        infinite: true,
+        infinite: false,
         dots: true
       }
     },
 
 
     {
-       breakpoint: 950,
+       breakpoint: 900,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+     },
+  {
+       breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
           slidesToScroll: 1
         }
      },
 
     {
-      breakpoint: 650,
+      breakpoint: 600,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
+    },
+
+    {
+      breakpoint: 499,
+      settings: "unslick"
+        
     }
   ]
   });
