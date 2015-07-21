@@ -134,14 +134,6 @@ section {
   padding-right: 40px;
   padding-left: 40px; }
 
-.carouselInnerWrapper {
-  height: auto;
-  position: relative;
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 500px) {
-    .carouselInnerWrapper {
-      max-height: 500px; } }
-
 .main-wrapper:after, .carouselInnerWrapper:after {
   content: "";
   display: block;
@@ -209,6 +201,7 @@ section {
   border-display: none;
   border-radius: 0;
   height: auto;
+  outline: 0;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -227,6 +220,7 @@ a.card img {
   border-display: none;
   border-radius: 0;
   height: auto;
+  outline: 0;
   position: relative;
   width: 300px;
   /*Extra Small Devices, Phones */ }
@@ -351,14 +345,10 @@ input.cmn-toggle-round-flat:checked + label:after {
   display: none;
   height: 100%;
   left: 0;
-  position: absolute;
+  position: fixed;
   text-align: center;
   top: 0;
-  width: 100%;
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 650px) {
-    #overlay {
-      display: block; } }
+  width: 100%; }
 
 #overlay img {
   height: 80%;

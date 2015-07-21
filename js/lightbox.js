@@ -2,7 +2,7 @@
 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
-var $caption = $("<p></p>")
+
 
 // Add image to overlay
 $overlay.append($image);
@@ -11,8 +11,7 @@ $overlay.append($image);
 
 // Add overlay
 $('body').append($overlay);
-	// an image
-	// a caption
+	
 
 // Capture the click event on a link to an image-mode
 $("#carousel-one a").on("click", function(event){

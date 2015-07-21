@@ -8,11 +8,9 @@
 
 .carouselInnerWrapper {
 	@extend %clearfix;
-	height: auto;
-	position: relative;
-	@include breakpoint (xs) {
-		max-height: 500px;	
-		}
+	// @include breakpoint (xs) {
+	// 	max-height: 500px;	
+	// 	}
 	}
 
 

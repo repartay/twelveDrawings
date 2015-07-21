@@ -6,6 +6,7 @@
 	border-display: none;
 	border-radius: 0;
 	height: auto;
+	outline: 0;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -24,6 +25,7 @@ a.card img {
 	border-display: none;
 	border-radius: 0;
 	height: auto;
+	outline: 0;
 	position: relative;
 	width: 300px;
 @include breakpoint (xs) {
