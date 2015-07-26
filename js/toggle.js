@@ -17,5 +17,7 @@ $(".toggler input").on("click", function(e) {
 					console.log("has text");
 					$("body").removeClass("text-mode");
 					$("body").addClass("image-mode");
-				} 
+				}
 			});
+
+

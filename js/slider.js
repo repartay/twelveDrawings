@@ -1,41 +1,63 @@
 $(document).ready(function(){
-  $('.carouselInnerWrapper').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1204,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
+  function runSlider() {
+    if ($(window).width() > 499 ) {
+        $('.carouselInnerWrapper').slick({
+          dots: true,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          responsive: [
+              {
+                breakpoint: 1100,
+                settings: {
+                  slidesToShow: 5,
+                  slidesToScroll: 1,
+                  infinite: false,
+                  dots: true
+                }
+              },
+              {
+                 breakpoint: 900,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                  }
+              },
+              {
+                breakpoint: 800,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+                  }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              }
+        ]
+      });
+    } else {
+      $('.carouselInnerWrapper').slick('unslick');
+    
 
 
-    {
-       breakpoint: 950,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-     },
 
-    {
-      breakpoint: 650,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
+
+
     }
-  ]
+  }
+
+  runSlider();
+
+  // usage:
+  $(window).smartresize(function(){
+    runSlider();
   });
 });
-
 
 
 
