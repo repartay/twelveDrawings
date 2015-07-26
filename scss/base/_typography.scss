@@ -1,17 +1,19 @@
 h1 {
 	color: white;
-	font: 100 2.5em/1.6em $stack-slab;
+	font: 100 2.75em/1.6em $stack-slab;
 	line-height: 1em;
-	max-width: 400px;
+	max-width: 450px;
 	padding-left: 20px;
+	margin-top: 16px;
 	@include breakpoint (md) {
 		padding: 1em;
-		padding-bottom:20px;
+		margin-top: 8px;
 		}
 	}
 
 .logo-wrapper p {
-	color: rgba(194, 224, 255, .6);
+	padding-left:1em;
+	color: white;
 	font: 1em/.7em bold 'Raleway Dots' sans-serif;
 	& span {
 		color: rgba(194, 224, 255, 1);
@@ -53,13 +55,19 @@ p {
 
 #carousel-one .cardText {
 	color: white;
-	font: 100 1em/1.1em $stack-slab;
+	font: 100 2em $stack-slab;
 	background-color: rgba(47,69,80,.85);
+	@include breakpoint (xs) {
+		font: 100 1em/1.1em $stack-slab;
+		}
 	}
 
 #carousel-two .cardText {
 	background-color: rgba(95,70,75,.8);
 	color: white;
-	font: 100 1.2em/1.5em $stack-slab;
+	font: 100 2em $stack-slab;
+	@include breakpoint (xs) {
+		font: 100 1em/1.1em $stack-slab;
+		}
 	}
 

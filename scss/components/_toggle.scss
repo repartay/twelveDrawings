@@ -1,17 +1,19 @@
 /*Inputs
 =====================*/
 .toggler {
-  position: absolute;
-  right: 8%;
-  top: 30px;
-  visibility: hidden;
-  @include breakpoint (sm){
-    visibility: visible;
+  position: fixed;
+  bottom: 8%;
+  left: 8%;
+  visibility: visible;
+  z-index: 999;
+  @include breakpoint (xs){
+    bottom: 95%;
+    left: 85%;
     }
   }
 
 .cmn-toggle {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: -10px;
   visibility: hidden;
@@ -19,19 +21,21 @@
 
 .cmn-toggle + label {
   cursor: pointer;
+  background-color: rgb(150, 153, 148);
   display: block;
   outline: none;
-  position: relative;
+  position: fixed;
   user-select: none;
+  z-index: 998;
   }
 
 input.cmn-toggle-round-flat + label {
-  background-color: #darkblue;
-  border-radius: 30px;
-  height: 42px;
+  background-color: rgb(150, 153, 148);
+  border-radius: 20px;
+  height: 32px;
   padding: 2px;
   transition: background 0.6s;
-  width: 100px;
+  width: 72px;
   z-index: 5;
   }
 
@@ -50,20 +54,20 @@ input.cmn-toggle-round-flat + label:after {
 .toggler .off{
   font-size: 1.25em;
   left: 0.25em;
-  position: absolute;
+  position: fixed;
   top: 0.25em;
   }
 
 .toggler .on{
   font-size: 1.25em;
   left: 0.25em;
-  position: absolute;
+  position: fixed;
   top: 0.25em;
   }
 
 input.cmn-toggle-round-flat + label:before {
-  background-color: rgba(175, 178, 188,1);
-  border-radius: 50px;
+  background-color: white;
+  border-radius: 40px;
   bottom: 2px;
   bottom: 2px;
   left: 2px;
@@ -74,21 +78,20 @@ input.cmn-toggle-round-flat + label:before {
   }
 
 input.cmn-toggle-round-flat + label:after {
-  background-color: rgba(47,69,80,1);
+  background-color: rgb(150, 153, 148);
   border-radius: 30px;
   bottom: 2px;
   left: 2px;
-
   top: 2px;
   transition: margin 0.6s, background 0.6s;
-  width: 40px;
+  width: 30px;
   }
 
 input.cmn-toggle-round-flat:checked + label {
-  background-color: yellow;
+  background-color: rgb(150, 153, 148);
   }
 
 input.cmn-toggle-round-flat:checked + label:after {
-  background-color: blue;
-  margin-left: 60px;
+  background-color: rgb(150, 153, 148);
+  margin-left: 40px;
   }

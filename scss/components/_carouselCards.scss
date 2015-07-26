@@ -46,7 +46,10 @@ a.card img {
 	margin: auto;
 	padding: 1em;
 	position: absolute;
-	width: 150px;
+	width: 300px;
+	@include breakpoint (xs) {
+		width: 150px;
+		}
 	}
 
 #carousel-two .cardText {
@@ -54,7 +57,10 @@ a.card img {
 	margin: auto;
 	padding: 1em;
 	position: absolute;
-	width: 150px;
+	width: 300px;
+	@include breakpoint (xs) {
+		width: 150px;
+		}
 	}
 
 .text-mode .cardText {

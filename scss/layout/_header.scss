@@ -6,10 +6,9 @@
 
 .logo-wrapper {
 	background-color: $gondola;
-	padding-left: 10px;
+	margin-bottom: 20px;
 	margin: 0;
 	padding-top: 5px;
-	padding-bottom: 5px;
 	@include breakpoint (md) {
 		background: url(../img/door_bg.jpg) center;
 		background-size: 40%;
@@ -25,10 +24,9 @@
 	@include breakpoint (md) {
 		height: 100%;
 		visibility: visible;	
+		padding-bottom: 20px;
 		}
 	}
-
-
 
 .main-splash {
 	background: url(../img/door_bg.jpg) no-repeat center;

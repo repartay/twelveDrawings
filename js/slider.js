@@ -42,6 +42,12 @@ $(document).ready(function(){
       });
     } else {
       $('.carouselInnerWrapper').slick('unslick');
+    
+
+
+
+
+
     }
   }
 

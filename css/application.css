@@ -16,18 +16,20 @@ body {
 
 h1 {
   color: white;
-  font: 100 2.5em/1.6em "Josefin Slab", Times, serif;
+  font: 100 2.75em/1.6em "Josefin Slab", Times, serif;
   line-height: 1em;
-  max-width: 400px;
+  max-width: 450px;
   padding-left: 20px;
+  margin-top: 16px;
   /*Extra Small Devices, Phones */ }
   @media (min-width: 900px) {
     h1 {
       padding: 1em;
-      padding-bottom: 20px; } }
+      margin-top: 8px; } }
 
 .logo-wrapper p {
-  color: rgba(194, 224, 255, 0.6);
+  padding-left: 1em;
+  color: white;
   font: 1em/.7em bold 'Raleway Dots' sans-serif; }
   .logo-wrapper p span {
     color: #c2e0ff;
@@ -61,13 +63,21 @@ p {
 
 #carousel-one .cardText {
   color: white;
-  font: 100 1em/1.1em "Josefin Slab", Times, serif;
-  background-color: rgba(47, 69, 80, 0.85); }
+  font: 100 2em "Josefin Slab", Times, serif;
+  background-color: rgba(47, 69, 80, 0.85);
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    #carousel-one .cardText {
+      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
 
 #carousel-two .cardText {
   background-color: rgba(95, 70, 75, 0.8);
   color: white;
-  font: 100 1.2em/1.5em "Josefin Slab", Times, serif; }
+  font: 100 2em "Josefin Slab", Times, serif;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    #carousel-two .cardText {
+      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
 
 .col {
   height: 100%; }
@@ -89,10 +99,9 @@ section {
 
 .logo-wrapper {
   background-color: #1c0f13;
-  padding-left: 10px;
+  margin-bottom: 20px;
   margin: 0;
   padding-top: 5px;
-  padding-bottom: 5px;
   /*Extra Small Devices, Phones */ }
   @media (min-width: 900px) {
     .logo-wrapper {
@@ -109,7 +118,8 @@ section {
   @media (min-width: 900px) {
     .logo-wrapper p {
       height: 100%;
-      visibility: visible; } }
+      visibility: visible;
+      padding-bottom: 20px; } }
 
 .main-splash {
   background: url(../img/door_bg.jpg) no-repeat center;
@@ -240,14 +250,22 @@ a.card img {
   margin: auto;
   padding: 1em;
   position: absolute;
-  width: 150px; }
+  width: 300px;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    #carousel-one .cardText {
+      width: 150px; } }
 
 #carousel-two .cardText {
   height: 90%;
   margin: auto;
   padding: 1em;
   position: absolute;
-  width: 150px; }
+  width: 300px;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    #carousel-two .cardText {
+      width: 150px; } }
 
 .text-mode .cardText {
   transform: translateY(-100%);
@@ -260,35 +278,39 @@ a.card img {
 /*Inputs
 =====================*/
 .toggler {
-  position: absolute;
-  right: 8%;
-  top: 30px;
-  visibility: hidden;
+  position: fixed;
+  bottom: 8%;
+  left: 8%;
+  visibility: visible;
+  z-index: 999;
   /*Extra Small Devices, Phones */ }
-  @media (min-width: 650px) {
+  @media (min-width: 500px) {
     .toggler {
-      visibility: visible; } }
+      bottom: 95%;
+      left: 85%; } }
 
 .cmn-toggle {
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: -10px;
   visibility: hidden; }
 
 .cmn-toggle + label {
   cursor: pointer;
+  background-color: #969994;
   display: block;
   outline: none;
-  position: relative;
-  user-select: none; }
+  position: fixed;
+  user-select: none;
+  z-index: 998; }
 
 input.cmn-toggle-round-flat + label {
-  background-color: #darkblue;
-  border-radius: 30px;
-  height: 42px;
+  background-color: #969994;
+  border-radius: 20px;
+  height: 32px;
   padding: 2px;
   transition: background 0.6s;
-  width: 100px;
+  width: 72px;
   z-index: 5; }
 
 input.cmn-toggle-round-flat + label:before {
@@ -304,18 +326,18 @@ input.cmn-toggle-round-flat + label:after {
 .toggler .off {
   font-size: 1.25em;
   left: 0.25em;
-  position: absolute;
+  position: fixed;
   top: 0.25em; }
 
 .toggler .on {
   font-size: 1.25em;
   left: 0.25em;
-  position: absolute;
+  position: fixed;
   top: 0.25em; }
 
 input.cmn-toggle-round-flat + label:before {
-  background-color: #afb2bc;
-  border-radius: 50px;
+  background-color: white;
+  border-radius: 40px;
   bottom: 2px;
   bottom: 2px;
   left: 2px;
@@ -325,20 +347,36 @@ input.cmn-toggle-round-flat + label:before {
   z-index: 0; }
 
 input.cmn-toggle-round-flat + label:after {
-  background-color: #2f4550;
+  background-color: #969994;
   border-radius: 30px;
   bottom: 2px;
   left: 2px;
   top: 2px;
   transition: margin 0.6s, background 0.6s;
-  width: 40px; }
+  width: 30px; }
 
 input.cmn-toggle-round-flat:checked + label {
-  background-color: yellow; }
+  background-color: #969994; }
 
 input.cmn-toggle-round-flat:checked + label:after {
-  background-color: blue;
-  margin-left: 60px; }
+  background-color: #969994;
+  margin-left: 40px; }
+
+.left-icon i {
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  left: -25px;
+  top: 8px;
+  font-size: 1.5em; }
+
+.right-icon i {
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  right: -92px;
+  top: 8px;
+  font-size: 1.5em; }
 
 #overlay {
   background: rgba(0, 0, 0, 0.85);
@@ -348,10 +386,12 @@ input.cmn-toggle-round-flat:checked + label:after {
   position: fixed;
   text-align: center;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 998; }
 
 #overlay img {
   height: 80%;
-  margin-top: 5%; }
+  margin-top: 5%;
+  z-index: 999; }
 
 /*# sourceMappingURL=application.css.map */
