@@ -42,12 +42,6 @@ $(document).ready(function(){
       });
     } else {
       $('.carouselInnerWrapper').slick('unslick');
-    
-
-
-
-
-
     }
   }
 
@@ -58,11 +52,3 @@ $(document).ready(function(){
     runSlider();
   });
 });
-
-
-
-
-
-
-
-

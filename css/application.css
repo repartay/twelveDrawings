@@ -8,7 +8,7 @@
 body {
   margin: 0;
   background-color: #dbdbdb;
-  font: 0.8em "Merriweather", Helvetica, sans-serif; }
+  font: 0.8em "Raleway Dots", Times, serif; }
 
 .main-wrapper {
   width: 100%;
@@ -18,9 +18,9 @@ h1 {
   color: white;
   font: 100 2.75em/1.6em "Josefin Slab", Times, serif;
   line-height: 1em;
+  margin-top: 16px;
   max-width: 450px;
   padding-left: 20px;
-  margin-top: 16px;
   /*Extra Small Devices, Phones */ }
   @media (min-width: 900px) {
     h1 {
@@ -30,10 +30,10 @@ h1 {
 .logo-wrapper p {
   padding-left: 1em;
   color: white;
-  font: 1em/.7em bold 'Raleway Dots' sans-serif; }
+  font: 1em/0.7em bold "Raleway Dots", Times, serif; }
   .logo-wrapper p span {
     color: #c2e0ff;
-    font: 2em/1.5em 'Raleway Dots' sans-serif; }
+    font: 2em/1.5em "Raleway Dots", Times, serif; }
 
 h2 {
   color: #c2e0ff;
@@ -58,6 +58,10 @@ p {
   color: rgba(95, 70, 75, 0.8);
   font: 600 2em "Josefin Slab", Times, serif; }
 
+.label-three p {
+  color: rgba(58, 64, 90, 0.8);
+  font: 600 2em "Josefin Slab", Times, serif; }
+
 .cmn-toggle-round-flat {
   font: 1.8em/1em "Josefin Slab", Times, serif; }
 
@@ -77,6 +81,33 @@ p {
   /*Extra Small Devices, Phones */ }
   @media (min-width: 500px) {
     #carousel-two .cardText {
+      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
+
+#carousel-three .cardText {
+  background-color: rgba(58, 64, 90, 0.8);
+  color: white;
+  font: 100 2em "Josefin Slab", Times, serif;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    #carousel-three .cardText {
+      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
+
+#carousel-four .cardText {
+  background-color: rgba(109, 33, 60, 0.8);
+  color: white;
+  font: 100 2em "Josefin Slab", Times, serif;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    #carousel-four .cardText {
+      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
+
+#carousel-five .cardText {
+  background-color: rgba(142, 65, 21, 0.8);
+  color: white;
+  font: 100 2em "Josefin Slab", Times, serif;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    #carousel-five .cardText {
       font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
 
 .col {
@@ -151,8 +182,7 @@ section {
 
 /*Slick BUTTON OVERRIDES 
 ========================== */
-/* Dots 
-========================== */
+qaW
 #carousel-one .slick-dots li.slick-active button:before {
   color: rgba(58, 64, 90, 0.75); }
 
@@ -203,9 +233,64 @@ section {
   #carousel-two .slick-next:before.slick-disabled:before {
     color: rgba(95, 70, 75, 0.25); }
 
-/* Card Layout (Image and Captions)
+#carousel-three .slick-prev:before,
+#carousel-three .slick-next:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(58, 64, 90, 0.75); }
+  #carousel-three .slick-prev:before:hover, #carousel-three .slick-prev:before:focus,
+  #carousel-three .slick-next:before:hover,
+  #carousel-three .slick-next:before:focus {
+    background: transparent;
+    color: transparent;
+    outline: none; }
+    #carousel-three .slick-prev:before:hover:before, #carousel-three .slick-prev:before:focus:before,
+    #carousel-three .slick-next:before:hover:before,
+    #carousel-three .slick-next:before:focus:before {
+      color: #3a405a; }
+  #carousel-three .slick-prev:before.slick-disabled:before,
+  #carousel-three .slick-next:before.slick-disabled:before {
+    color: rgba(58, 64, 90, 0.25); }
 
-================================ */
+#carousel-four .slick-prev:before,
+#carousel-four .slick-next:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(109, 33, 60, 0.75); }
+  #carousel-four .slick-prev:before:hover, #carousel-four .slick-prev:before:focus,
+  #carousel-four .slick-next:before:hover,
+  #carousel-four .slick-next:before:focus {
+    background: transparent;
+    color: transparent;
+    outline: none; }
+    #carousel-four .slick-prev:before:hover:before, #carousel-four .slick-prev:before:focus:before,
+    #carousel-four .slick-next:before:hover:before,
+    #carousel-four .slick-next:before:focus:before {
+      color: #6d213c; }
+  #carousel-four .slick-prev:before.slick-disabled:before,
+  #carousel-four .slick-next:before.slick-disabled:before {
+    color: rgba(109, 33, 60, 0.25); }
+
+#carousel-five .slick-prev:before,
+#carousel-five .slick-next:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(142, 65, 21, 0.75); }
+  #carousel-five .slick-prev:before:hover, #carousel-five .slick-prev:before:focus,
+  #carousel-five .slick-next:before:hover,
+  #carousel-five .slick-next:before:focus {
+    background: transparent;
+    color: transparent;
+    outline: none; }
+    #carousel-five .slick-prev:before:hover:before, #carousel-five .slick-prev:before:focus:before,
+    #carousel-five .slick-next:before:hover:before,
+    #carousel-five .slick-next:before:focus:before {
+      color: #8e4115; }
+  #carousel-five .slick-prev:before.slick-disabled:before,
+  #carousel-five .slick-next:before.slick-disabled:before {
+    color: rgba(142, 65, 21, 0.25); }
+
+/* Card Layout (Image and Captions) ================================ */
 .cardWrapper {
   display: inline-block;
   border-display: none;
@@ -238,14 +323,7 @@ a.card img {
     a.card img {
       width: 150px; } }
 
-/*---.accordianText {
-	position: relative;
-	background: rgba(47,69,80,1);
-	color: white;
-	font: 2em $stack-slab;
-	width: 100%;
-}--*/
-#carousel-one .cardText {
+.cardText {
   height: 90%;
   margin: auto;
   padding: 1em;
@@ -253,18 +331,7 @@ a.card img {
   width: 300px;
   /*Extra Small Devices, Phones */ }
   @media (min-width: 500px) {
-    #carousel-one .cardText {
-      width: 150px; } }
-
-#carousel-two .cardText {
-  height: 90%;
-  margin: auto;
-  padding: 1em;
-  position: absolute;
-  width: 300px;
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 500px) {
-    #carousel-two .cardText {
+    .cardText {
       width: 150px; } }
 
 .text-mode .cardText {
@@ -275,6 +342,16 @@ a.card img {
   transform: translateY(0%);
   transition-duration: 1.7s; }
 
+.col {
+  animation: fadeIn 1s .2s forwards;
+  opacity: 0; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%); }
+  100% {
+    opacity: 1; } }
 /*Inputs
 =====================*/
 .toggler {
@@ -282,7 +359,7 @@ a.card img {
   bottom: 8%;
   left: 8%;
   visibility: visible;
-  z-index: 999;
+  z-index: 998;
   /*Extra Small Devices, Phones */ }
   @media (min-width: 500px) {
     .toggler {

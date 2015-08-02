@@ -1,6 +1,5 @@
-/* Card Layout (Image and Captions)
+/* Card Layout (Image and Captions) ================================ */
 
-================================ */
 .cardWrapper {
 	display: inline-block;
 	border-display: none;
@@ -32,27 +31,7 @@ a.card img {
 		width: 150px;
 		}
 	}
-
-/*---.accordianText {
-	position: relative;
-	background: rgba(47,69,80,1);
-	color: white;
-	font: 2em $stack-slab;
-	width: 100%;
-}--*/
-
-#carousel-one .cardText {
-	height: 90%;
-	margin: auto;
-	padding: 1em;
-	position: absolute;
-	width: 300px;
-	@include breakpoint (xs) {
-		width: 150px;
-		}
-	}
-
-#carousel-two .cardText {
+.cardText {
 	height: 90%;
 	margin: auto;
 	padding: 1em;
@@ -72,3 +51,19 @@ a.card img {
   transform: translateY(0%);
   transition-duration: 1.7s;
 	}
+
+
+.col {
+	animation: fadeIn 1s .2s forwards;
+	opacity: 0;
+}
+
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+		transform: translateY(20%);
+	}
+	100% {
+		opacity: 1;
+	}
+}
