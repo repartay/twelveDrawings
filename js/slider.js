@@ -44,7 +44,7 @@ $(document).ready(function(){
       $('.carouselInnerWrapper').slick('unslick');
     }
   }
-
+  
   runSlider();
 
   // usage:

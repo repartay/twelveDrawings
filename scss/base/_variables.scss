@@ -1,14 +1,27 @@
+//================================
+// Color + Font Variables
+//================================
+
 // Descriptive color variables
-$alto		: rgba(219,219,219,1);
-$bluewood	: rgba(47,69,80,1);
-$buckley	: rgba(95,70,75,1);
-$copper		: rgba(142, 65, 21, 1);
-$gondola	: rgba(28,15,19,1);
-$oxford-blue: rgba(58,64,90,1);
-$port		: rgba(109, 33, 60, 1);
+
+$alto			: rgb(219,219,219);
+$altoLight		: rgba($alto, .8);
+$bluewood		: rgb(47,69,80);
+$bluewoodLight	: rgba($bluewood, .8);
+$grey			: rgb(150,153,148);
+$buckley		: rgb(95,70,75);
+$buckleyLight	: rgba($buckley, .8);
+$copper			: rgb(142, 65, 21);
+$copperLight	: rgba($copper, .8);
+$gondola		: rgb(28,15,19);
+$oxford-blue	: rgb(58,64,90);
+$oxfordLight	: rgba($oxford-blue, .8);
+$port			: rgb(109, 33, 60);
+$portLight		: rgba( $port, .8);
 
 
 //Font stacks
+
 $stack-slab : 'Josefin Slab', Times, serif;
 $stack-rway : 'Raleway Dots', Times, serif;
 

@@ -1,23 +1,38 @@
+//================================
+// Slick BUTTON OVERRIDES 
+//================================
 
-/*Slick BUTTON OVERRIDES 
-========================== */
-qaW
 /* Dots 
 ========================== */
 #carousel-one .slick-dots li.slick-active button:before {
-    color: rgba(58,64,90,.75);
+    color: rgba($bluewood,.75);
     }
-
 #carousel-one .slick-dots li button:before {
-    color: rgba(58,64,90,.5);
+    color: rgba($bluewood,.6);
     }
-
 #carousel-two .slick-dots li.slick-active button:before {
-    color: rgba(95,70,75,.75);
+    color: rgba($buckley,.75);
     }
-
 #carousel-two .slick-dots li button:before {
-    color: rgba(95,70,75,.5);
+    color: rgba($buckley,.5);
+    }
+#carousel-three .slick-dots li.slick-active button:before {
+    color: rgba($oxford-blue,.75);
+    }
+#carousel-three .slick-dots li button:before {
+    color: rgba($oxford-blue,.5);
+    }
+#carousel-four .slick-dots li.slick-active button:before {
+    color: rgba($port,.75);
+    }
+#carousel-four .slick-dots li button:before {
+    color: rgba($port,.5);
+    }
+#carousel-five .slick-dots li.slick-active button:before {
+    color: rgba($copper,.75);
+    }
+#carousel-five .slick-dots li button:before {
+    color: rgba($copper,.5);
     }
 
 /* Arrows 
@@ -42,17 +57,17 @@ qaW
 #carousel-two .slick-next:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: rgba(95,70,75,0.75);
+    color: rgba($buckley,0.75);
     &:hover, &:focus {
         background: transparent;
         color: transparent;
         outline: none;
         &:before {
-            color: rgba(95,70,75,1);
+            color: $buckley;
             }
         }
     &.slick-disabled:before {
-        color: rgba(95,70,75,0.25);
+        color: rgba($buckley,0.25);
         }
     }
 
@@ -60,17 +75,17 @@ qaW
 #carousel-three .slick-next:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: rgba(58,64,90,0.75);
+    color: rgba($oxford-blue,0.75);
     &:hover, &:focus {
         background: transparent;
         color: transparent;
         outline: none;
         &:before {
-            color: rgba(58,64,90,1);
+            color: $oxford-blue;
             }
         }
     &.slick-disabled:before {
-        color: rgba(58,64,90,0.25);
+        color: rgba($oxford-blue,0.25);
         }
     }
 
@@ -78,17 +93,17 @@ qaW
 #carousel-four .slick-next:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: rgba(109, 33, 60,0.75);
+    color: rgba($port,0.75);
     &:hover, &:focus {
         background: transparent;
         color: transparent;
         outline: none;
         &:before {
-            color: rgba(109, 33, 60,1);
+            color: $port;
             }
         }
     &.slick-disabled:before {
-        color: rgba(109, 33, 60,0.25);
+        color: rgba($port, .25);
         }
     }
 
@@ -96,16 +111,16 @@ qaW
 #carousel-five .slick-next:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: rgba(142, 65, 21,0.75);
+    color: rgba($copper, .75);
     &:hover, &:focus {
         background: transparent;
         color: transparent;
         outline: none;
         &:before {
-            color: rgba(142, 65, 21,1);
+            color: $copper;
             }
         }
     &.slick-disabled:before {
-        color: rgba(142, 65, 21,0.25);
+        color: rgba($copper, .25);
         }
     }

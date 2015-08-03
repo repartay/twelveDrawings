@@ -1,3 +1,7 @@
+//================================
+// Styling for All Text Elements
+//================================
+
 h1 {
 	color: white;
 	font: 100 2.75em/1.6em $stack-slab;
@@ -39,66 +43,59 @@ p {
 	text-align: left;
 	}
 
+// Carousel Label Text
+
 .label-one p{
-	color: rgba(47,69,80,.8);
+	color: $bluewoodLight;
 	font: 600 2em $stack-slab;
 	} 
 
 .label-two p{
-	color: rgba(95,70,75,.8);
+	color: $buckleyLight;
 	font: 600 2em $stack-slab;
 	} 
 
 .label-three p{
-	color: rgba(58,64,90,.8);
+	color: $oxfordLight;
 	font: 600 2em $stack-slab;
 	} 
 
-.cmn-toggle-round-flat {
-	font: 1.8em/1em $stack-slab;
-	}
+.label-four p{
+	color: $portLight;
+	font: 600 2em $stack-slab;
+	} 
 
-#carousel-one .cardText {
+.label-five p{
+	color: $copperLight;
+	font: 600 2em $stack-slab;
+	} 
+
+// Background Color for Card Text	
+
+.carouselInnerWrapper .cardText {
 	color: white;
 	font: 100 2em $stack-slab;
-	background-color: rgba(47,69,80,.85);
 	@include breakpoint (xs) {
-		font: 100 1em/1.1em $stack-slab;
+		font: 100 1.1em/1.2em $stack-slab;
 		}
+}
+
+#carousel-one .cardText {
+	background-color: $bluewoodLight;
 	}
 
 #carousel-two .cardText {
-	background-color: rgba(95,70,75,.8);
-	color: white;
-	font: 100 2em $stack-slab;
-	@include breakpoint (xs) {
-		font: 100 1em/1.1em $stack-slab;
-		}
+	background-color: $buckleyLight;
 	}
 
 #carousel-three .cardText {
-	background-color: rgba(58,64,90,.8);
-	color: white;
-	font: 100 2em $stack-slab;
-	@include breakpoint (xs) {
-		font: 100 1em/1.1em $stack-slab;
-		}
+	background-color: $oxfordLight;
 	}
 
 #carousel-four .cardText {
-	background-color: rgba(109, 33, 60,.8);
-	color: white;
-	font: 100 2em $stack-slab;
-	@include breakpoint (xs) {
-		font: 100 1em/1.1em $stack-slab;
-		}
+	background-color: rgba($port, .85);
 	}
 
 #carousel-five .cardText {
-	background-color: rgba(142, 65, 21,.8);
-	color: white;
-	font: 100 2em $stack-slab;
-	@include breakpoint (xs) {
-		font: 100 1em/1.1em $stack-slab;
-		}
+	background-color: rgba($copper, .85);
 	}
