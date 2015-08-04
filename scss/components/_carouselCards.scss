@@ -1,4 +1,6 @@
-/* Card Layout (Image and Captions) ================================ */
+//=================================
+// Card Layout (Image and Captions) 
+//=================================
 
 .cardWrapper {
 	display: inline-block;
@@ -34,7 +36,10 @@ a.card img {
 .cardText {
 	height: 90%;
 	margin: auto;
-	padding: 1em;
+	padding-top: .6em;
+	padding-bottom: .8em;
+	padding-right: .8em;
+	padding-left:  .8em;
 	position: absolute;
 	width: 300px;
 	@include breakpoint (xs) {
@@ -52,8 +57,7 @@ a.card img {
   transition-duration: 1.7s;
 	}
 
-
-.col {
+section {
 	animation: fadeIn 1s .2s forwards;
 	opacity: 0;
 }

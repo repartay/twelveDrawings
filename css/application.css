@@ -1,7 +1,3 @@
-/*Media Queries===
-=================================*/
-/*Page Styles
-====================*/
 * {
   box-sizing: border-box; }
 
@@ -62,56 +58,36 @@ p {
   color: rgba(58, 64, 90, 0.8);
   font: 600 2em "Josefin Slab", Times, serif; }
 
-.cmn-toggle-round-flat {
-  font: 1.8em/1em "Josefin Slab", Times, serif; }
+.label-four p {
+  color: rgba(109, 33, 60, 0.8);
+  font: 600 2em "Josefin Slab", Times, serif; }
+
+.label-five p {
+  color: rgba(142, 65, 21, 0.8);
+  font: 600 2em "Josefin Slab", Times, serif; }
+
+.carouselInnerWrapper .cardText {
+  color: white;
+  font: 100 2em "Josefin Slab", Times, serif;
+  /*Extra Small Devices, Phones */ }
+  @media (min-width: 500px) {
+    .carouselInnerWrapper .cardText {
+      font: 100 1.1em/1.2em "Josefin Slab", Times, serif; } }
 
 #carousel-one .cardText {
-  color: white;
-  font: 100 2em "Josefin Slab", Times, serif;
-  background-color: rgba(47, 69, 80, 0.85);
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 500px) {
-    #carousel-one .cardText {
-      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
+  background-color: rgba(47, 69, 80, 0.8); }
 
 #carousel-two .cardText {
-  background-color: rgba(95, 70, 75, 0.8);
-  color: white;
-  font: 100 2em "Josefin Slab", Times, serif;
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 500px) {
-    #carousel-two .cardText {
-      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
+  background-color: rgba(95, 70, 75, 0.8); }
 
 #carousel-three .cardText {
-  background-color: rgba(58, 64, 90, 0.8);
-  color: white;
-  font: 100 2em "Josefin Slab", Times, serif;
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 500px) {
-    #carousel-three .cardText {
-      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
+  background-color: rgba(58, 64, 90, 0.8); }
 
 #carousel-four .cardText {
-  background-color: rgba(109, 33, 60, 0.8);
-  color: white;
-  font: 100 2em "Josefin Slab", Times, serif;
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 500px) {
-    #carousel-four .cardText {
-      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
+  background-color: rgba(109, 33, 60, 0.85); }
 
 #carousel-five .cardText {
-  background-color: rgba(142, 65, 21, 0.8);
-  color: white;
-  font: 100 2em "Josefin Slab", Times, serif;
-  /*Extra Small Devices, Phones */ }
-  @media (min-width: 500px) {
-    #carousel-five .cardText {
-      font: 100 1em/1.1em "Josefin Slab", Times, serif; } }
-
-.col {
-  height: 100%; }
+  background-color: rgba(142, 65, 21, 0.85); }
 
 section {
   border: 2px black;
@@ -142,7 +118,7 @@ section {
 .logo-wrapper p {
   float: left;
   position: absolute;
-  right: 250px;
+  right: 275px;
   top: 0px;
   visibility: hidden;
   /*Extra Small Devices, Phones */ }
@@ -175,25 +151,45 @@ section {
   padding-right: 40px;
   padding-left: 40px; }
 
+.carouselOuterWrapper:last-child {
+  padding-bottom: 50px; }
+
 .main-wrapper:after, .carouselInnerWrapper:after {
   content: "";
   display: block;
   clear: both; }
 
-/*Slick BUTTON OVERRIDES 
+/* Dots 
 ========================== */
-qaW
 #carousel-one .slick-dots li.slick-active button:before {
-  color: rgba(58, 64, 90, 0.75); }
+  color: rgba(47, 69, 80, 0.75); }
 
 #carousel-one .slick-dots li button:before {
-  color: rgba(58, 64, 90, 0.5); }
+  color: rgba(47, 69, 80, 0.6); }
 
 #carousel-two .slick-dots li.slick-active button:before {
   color: rgba(95, 70, 75, 0.75); }
 
 #carousel-two .slick-dots li button:before {
   color: rgba(95, 70, 75, 0.5); }
+
+#carousel-three .slick-dots li.slick-active button:before {
+  color: rgba(58, 64, 90, 0.75); }
+
+#carousel-three .slick-dots li button:before {
+  color: rgba(58, 64, 90, 0.5); }
+
+#carousel-four .slick-dots li.slick-active button:before {
+  color: rgba(109, 33, 60, 0.75); }
+
+#carousel-four .slick-dots li button:before {
+  color: rgba(109, 33, 60, 0.5); }
+
+#carousel-five .slick-dots li.slick-active button:before {
+  color: rgba(142, 65, 21, 0.75); }
+
+#carousel-five .slick-dots li button:before {
+  color: rgba(142, 65, 21, 0.5); }
 
 /* Arrows 
 ========================== */
@@ -290,7 +286,6 @@ qaW
   #carousel-five .slick-next:before.slick-disabled:before {
     color: rgba(142, 65, 21, 0.25); }
 
-/* Card Layout (Image and Captions) ================================ */
 .cardWrapper {
   display: inline-block;
   border-display: none;
@@ -326,7 +321,10 @@ a.card img {
 .cardText {
   height: 90%;
   margin: auto;
-  padding: 1em;
+  padding-top: .6em;
+  padding-bottom: .8em;
+  padding-right: .8em;
+  padding-left: .8em;
   position: absolute;
   width: 300px;
   /*Extra Small Devices, Phones */ }
@@ -342,7 +340,7 @@ a.card img {
   transform: translateY(0%);
   transition-duration: 1.7s; }
 
-.col {
+section {
   animation: fadeIn 1s .2s forwards;
   opacity: 0; }
 
@@ -352,8 +350,6 @@ a.card img {
     transform: translateY(20%); }
   100% {
     opacity: 1; } }
-/*Inputs
-=====================*/
 .toggler {
   position: fixed;
   bottom: 8%;

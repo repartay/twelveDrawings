@@ -1,3 +1,7 @@
+//================================
+// Carousel Wrappers
+//================================
+
 .carouselOuterWrapper {
 	overflow:hidden;
 	position: relative;
@@ -9,5 +13,9 @@
 .carouselInnerWrapper {
 	@extend %clearfix;
 	}
+
+.carouselOuterWrapper:last-child {
+	padding-bottom: 50px;
+}
 
 
