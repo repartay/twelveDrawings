@@ -1,44 +1,73 @@
-/*Card Class .hiddenCard
-====================*/
+//=================================
+// Card Layout (Image and Captions) 
+//=================================
 
-/*Card Class .shownCard
-====================*/
-
-/* Card Layout (Image and Captions)
-================================ */
-a.card {
-	border: 1px black;
+.cardWrapper {
 	display: inline-block;
-	text-decoration: none;
-	height: 100%;
+	border-display: none;
+	border-radius: 0;
+	height: auto;
+	outline: 0;
+	overflow: hidden;
 	position: relative;
-	float: left;
-	margin-left: 10px;
-}
+	text-align: center;
+	text-decoration: none;
+	width: 300px;
+	@include breakpoint (xs) {
+		display: block;
+		height: auto;
+		margin-right: 10px;
+		width: 150px;
+		overflow: visible;
+		}
+	}
 
 a.card img {
-	display: inline-block;
-	width: auto;
-	max-height: 500px;
-}
-
-
-a {
-
-
-}
-
+	border-display: none;
+	border-radius: 0;
+	height: auto;
+	outline: 0;
+	position: relative;
+	width: 300px;
+@include breakpoint (xs) {
+		width: 150px;
+		}
+	}
 .cardText {
+	height: 90%;
+	margin: auto;
+	padding-top: .6em;
+	padding-bottom: .8em;
+	padding-right: .8em;
+	padding-left:  .8em;
 	position: absolute;
-	background-color: white;
-	top: 100%;
-	transition: all .5s;
-	color: blue;
-}
+	width: 300px;
+	@include breakpoint (xs) {
+		width: 150px;
+		}
+	}
 
 .text-mode .cardText {
   transform: translateY(-100%);
-}
+  transition-duration: 1s;
+	}
+
 .image-mode .cardText {
   transform: translateY(0%);
+  transition-duration: 1.7s;
+	}
+
+section {
+	animation: fadeIn 1s .2s forwards;
+	opacity: 0;
+}
+
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+		transform: translateY(20%);
+	}
+	100% {
+		opacity: 1;
+	}
 }

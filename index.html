@@ -2,15 +2,23 @@
 <html>
 	<head>
 		<title>Twelve Drawings</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
 		<!--Link Fonts-->
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,600' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700italic,700' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,600" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+		
 
-		<!--Link Stylesheets-->
-		<link rel="stylesheet" type="text/css" href="css/application.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<!--Link FontAwesome-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+		<!--Link Slick Stylesheet-->
+		<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css">
+
+		<!--Link Reset + Application Stylesheets-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/application.css">	
 	</head>
 
 	<body class="image-mode">
@@ -18,236 +26,757 @@
 
 			<!--Top Nav Bar Container-->
 			<header class="main-header">
-				<div class="toggle-wrapper">
-					<h1 class="main-logo">TWELVE   DRAWINGS</h1>
-						<div class="toggler"> 
-							<input id="cmn-toggle-round-flat" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-		  					<label for="cmn-toggle-round-flat"></label>
+				<div class="logo-wrapper">
+					<h1 class="main-logo">TWELVE DRAWINGS</h1>
+					<p>
+						1930s definitions of<br><span>Twelve Step words</span><br>accompanied by<br> <span>new illustrations</span>
+					</p>
+						<!--Tooggler Div-->
+					<div class="toggler"> 
+						<input id="cmn-toggle-round-flat" class="cmn-toggle cmn-toggle-round-flat" type="checkbox"	>
+		  				<label for="cmn-toggle-round-flat"></label>
+						<!--Tooggle Icon-->
+		  				<div class="left-icon">
+							<i class="fa fa-picture-o"></i>
 						</div>
-				</div>
-				<h2 class="main-splash">1930s definitions of<br><span>Twelve Step words</span><br><br>accompanied by<br> <span>new illustrations</span></h2>
+						<div class="right-icon">
+							<i class="fa fa-file-text-o"></i>
+						</div>
+					</div>
+					<div class="main-splash">
+						<h2>1930s definitions of<br><span>Twelve Step words</span><br><br>accompanied by<br> <span>new illustrations</span></h2>
+					</div>
 				</div>
 			</header> 
 
-			<!--Left Column Aside
-			<aside class="col col-left">
-				<h1>Steps</h1>
-				<p>When possible, the steps were worked with the help of a sover sponsor. Still, in the early days, many people recovered by following the written literature alone.</p><br>
-				<h2>Promises</h2>
-				<p>In the description of Step Nine, there is a long paragraph listing benefits that can be expected in recovery. These have come affectionatley to be known as the Twelve Promises.</p><br>
-				<h1>Serenity Words</h1>
-				<p>Years after the steps were written, another set of principles were published. Known as the "Traditions", they guide Twelve Steps groups toward cohesiveness.</p><br>
-				<h1>Moments</h1>
-				<p>In the literature, several stories were used to sum up...</p>
-			</aside> -->
-
 			<!--open right column/container for all carousels-->
-			<section class="col col-right">
+			<section>
+
+				<!--open LABEL for CAROUSEL-ONE-->
 				<div class="carousel-label label-one">
 					<p>Twelve Steps</p>
 				</div>
+				<!--open CAROUSEL-ONE 			OUTER wrapper-->
+				<div class="carouselOuterWrapper outerOne">
+				<!--open slick CAROUSEL-ONE 	INNER wrapper-->
+					<div id="carousel-one" class="carouselInnerWrapper">
 
-				<!--open .carouselOuterWrapper-->
-				<div class="carouselOuterWrapper">
+						<!--open slick item CAROUSEL-ONE CARD 0-->
+						<div class="cardWrapper cover"> 	
+							<a href="img/step0_cover.jpg" class="card" id="step1">
+								<img src="img/step0_cover.jpg" alt="STEPS page 59 - “Big Book” of Alcoholics Anonymous
+								pub. 1939" />
+								<!--open cardText-->
+								<div class="cardText"><br><br>SOURCE<br><br>“Big Book” of Alcoholics Anonymous, p. 59<br><br>pub. 1939
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 0-->
 
-					<!--carousel indicators MAY NOT USE
-					
-				<ol class="carousel-indicators">
-					<li class="active" data-target="#carousel-one" data-slide-to="0"></li>
-					<li data-target="#carousel-one" data-slide-to="1"></li>
-					<li data-target="#carousel-one" data-slide-to="2"></li>
-					<li data-target="#carousel-one" data-slide-to="3"></li>
-					<li data-target="#carousel-one" data-slide-to="12"></li>
-				</ol>
+						<!--open slick item CAROUSEL-ONE CARD 1-->
+						<div class="cardWrapper powerless"> 	
+							<a href="img/step1_powerless.jpg" class="card" id="step1">
+								<img src="img/step1_powerless.jpg" alt="Step 1 Powerless. 	adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab." />
+								<!--open cardText-->
+								<div class="cardText">adjective.<br><br>Destitute of the ability (whether physical, mental, or moral) to act.
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+						<!--open slick item CAROUSEL-ONE CARD 2-->
+						<div class="cardWrapper restore"> 
 
-				-->
-
-				<!--open #carousel-one wrapper-->
-						<div id="carousel-one" class="carouselInnerWrapper">
+								<a href="img/step2_restore.jpg" class="card" id="step2">
+									<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
+									<!--open cardText-->
+									<div class="cardText">verb.<br><br>To give something back which has been lost or taken. 
+									</div> <!--close cardText-->
+								</a>
+						</div> <!--close slick item CARD 2-->
+						<!--open slick item CAROUSEL-ONE CARD 3-->
+						<div class="cardWrapper decision"> 
 						
-						<!--open card #step1-->
-						<a href="#" class="card" id="step1">
-							<img src="img/step1_powerless.jpg" alt="Step 1 Powerless. adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div> <!--close card #step1-->
-						</a>
+							<a href="img/step3_decision.jpg" class="card" id="step3">
+								<img src="img/step3_decision.jpg" alt="Step 3. Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks. A woman stands on one of the forks and points, directing the train to the other track." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>The act of terminating by giving judgement on.
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 3-->
+						<!--open slick item CAROUSEL-ONE CARD 4-->
+						<div class="cardWrapper inventory"> 
 
-							<a href="#" class="card" id="step2">
-							<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+							<a href="img/step4_inventory.jpg" class="card" id="step4">
+								<img src="img/step4_inventory.jpg" alt="Step 4. Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person. Drawing shows a completed inventory form, totally up the belongings of the deceased, Miranda Wright." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person.
+								</div> <!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 4-->
+						<!--open slick item CAROUSEL-ONE CARD 5-->
+						<div class="cardWrapper admit">
 
-						<a href="#" class="card" id="step3">
-							<img src="img/step3_decision.jpg" alt="Step 3. Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks. A woman stands on one of the forks and points, directing the train to the other track." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+							<a href="img/step5_admit.jpg" class="card" id="step5">
+								<img src="img/step5_admit.jpg" alt="Step 5 Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors. A smaller door within one of the doors is open, letting in a ray of light." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 5-->	
+						<!--open slick item CAROUSEL-ONE CARD 6-->
+						<div class="cardWrapper ready">
 
-						<a href="#" class="card" id="step4">
-							<img src="img/step4_inventory.jpg" alt="Step 4. Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person. Drawing shows a completed inventory form, totally up the belongings of the deceased, Miranda Wright." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+							<a href="img/step6_ready.jpg" class="card" id="step6">
+								<img src="img/step6_ready.jpg" alt="Step 6 Ready. adjective. Prepared for what one is about to do or experience. Drawing shows a squirrel in mid-air with its lil arms outstretched." />
+								<!--open cardText-->
+								<div class="cardText">adjective.<br><br>Prepared for what one is about to do or experience.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 6-->
+						<!--open slick item CAROUSEL-ONE CARD 7-->
+						<div class="cardWrapper remove">
 
-						<a href="#" class="card" id="step5">
-							<img src="img/step5_admit.jpg" alt="Step 5 Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors. A smaller door within one of the doors is open, letting in a ray of light." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+							<a href="img/step7_remove.jpg" class="card" id="step7">
+								<img src="img/step7_remove.jpg" alt="Step 7 Remove. verb. To change or shift a location, position, station or residence of. Drawing a close up of a full sink or bathtub drain, the plug of which has just been pulled, allowing air bubbles up." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To change or shift a location, position, station or residence of.
+								</div> 
+								<!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 7-->
+						<!--open slick item CAROUSEL-ONE CARD 8-->
+						<div class="cardWrapper harm">
 
-						<a href="#" class="card" id="step6">
-							<img src="img/step6_ready.jpg" alt="Step 6 Ready. adjective. Prepared for what one is about to do or experience. Drawing shows a squirrel in mid-air with its lil arms outstretched." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+							<a href="img/step8_harm.jpg" class="card" id="step8">
+								<img src="img/step8_harm.jpg" alt="Step 8 Harm. verb. To hurt. Drawing shows the severed head of a flower on a sidewalk in the foreground. The headless plant is in the background." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To hurt.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 8-->
+						<!--open slick item CAROUSEL-ONE CARD 9-->
+						<div class="cardWrapper amends">
+							<a href="img/step9_amends.jpg" class="card" id="step9">
+								<img src="img/step9_amends.jpg" alt="Step 9 Amends. noun. Compensation for loss or injury. Drawing shows a hand holding a paintbrush, painting a new picket in a white fence. The broken picket sits in the foreground." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>Compensation for loss or injury.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 9-->
+						<!--open slick item CAROUSEL-ONE CARD 10-->
+						<div class="cardWrapper continue">
 
-						<a href="#" class="card" id="step7">
-							<img src="img/step7_remove.jpg" alt="Step 7 Remove. verb. To change or shift a location, position, station or residence of. Drawing a close up of a full sink or bathtub drain, the plug of which has just been pulled, allowing air bubbles up." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+							<a href="img/step10_continue.jpg" class="card" id="step10">
+								<img src="img/step10_continue.jpg" alt="Step 10 Continue. verb. To remain ina  given place or condition. Drawing shows a chaotic household scene, a fallen lamp, a spilled pitcher, and a hissing cat perched atop a large dog happily sleeping."/>
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To remain ina  given place or condition.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 10-->
+						<!--open slick item CAROUSEL-ONE CARD 11-->
+						<div class="cardWrapper conscious">
 
-						<a href="#" class="card" id="step8">
-							<img src="img/step8_harm.jpg" alt="Step 8 Harm. verb. To hurt. Drawing shows the severed head of a flower on a sidewalk in the foreground. The headless plant is in the background." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
+							<a href="img/step11_conscious.jpg" class="card" id="step11">
+								<img src="img/step11_conscious.jpg" alt="Step 11. Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies. Drawing shows a woman with a young boy sitting on her lap. They are reading a book together and their fingers touch on the page." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>Sharing knowledge. And Contact. noun. A union or junction of bodies.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 11-->
+						<!--open slick item CAROUSEL-ONE CARD 12-->
+						<div class="cardWrapper spiritual">
+							<a href="img/step12_spiritual.jpg" class="card" id="step12">
+								<img src="img/step12_spiritual.jpg" alt="Step 12. Spiritual. adjective. Of, pertaining to, or consisting of the breath of life. Drawing shows a man underwater. He appears in a joyful pose on his way up to the surface." />
+								<!--open cardText-->
+								<div class="cardText">adjective.<br><br>Of, pertaining to, or consisting of the breath of life.
+								</div>
+							</a>
+						</div><!--close slick item CARD 12-->
+					</div><!--close CAROUSEL-ONE 	INNER wrapper-->
+					</div><!--close CAROUSEL-ONE 	OUTER wrapper-->
 
-						<a href="#" class="card" id="step9">
-							<img src="img/step9_amends.jpg" alt="Step 9 Amends. noun. Compensation for loss or injury. Drawing shows a hand holding a paintbrush, painting a new picket in a white fence. The broken picket sits in the foreground." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
 
-						<a href="#" class="card" id="step10">
-							<img src="img/step10_continue.jpg" alt="Step 10 Continue. verb. To remain ina  given place or condition. Drawing shows a chaotic household scene, a fallen lamp, a spilled pitcher, and a hissing cat perched atop a large dog happily sleeping." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step11">
-							<img src="img/step11_conscious.jpg" alt="Step 11. Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies. Drawing shows a woman with a young boy sitting on her lap. They are reading a book together and their fingers touch on the page." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-						<a href="#" class="card" id="step12">
-							<img src="img/step12_spiritual.jpg" alt="Step 12. Spiritual. adjuective. Of, pertaining to, or consisting of the breath of life. Drawing shows a man underwater. He appears in a joyful pose on his way up to the surface." />
-							<div class="cardText">
-								Adhibenda est munditia, non odiosa neque exquisita nimis.
-							</div>
-						</a>
-
-					</div><!--close #carousel-one inner wrapper-->
-
-					<!--open carousel-one buttons-->
-					<a class="carouselButton left-button" href="#carousel-one" data-slide="prev">
-						<i class="fa fa-angle-left"></i>
-					</a>
-					<a class="carouselButton right-button" href="#carousel-one" data-slide="next">	
-						<i class="fa fa-angle-right"></i>
-					</a>
-					<!--close carousel-one buttons-->
-			<div class="carousel-label label-two">
+				<!--open LABEL for CAROUSEL-TWO-->
+				<div class="carousel-label label-two">
 					<p>Twelve Promises</p>
 				</div>
-
-				</div><!--close carouselOuterWrapper-->
-
-				<!--open #carousel-two wrapper-->
+				<!--open CAROUSEL-TWO			OUTER wrapper-->
+				<div class="carouselOuterWrapper outerTwo">
+				<!--open slick CAROUSEL-TWO 	INNER wrapper-->
 				<div id="carousel-two" class="carouselInnerWrapper">
-					<!--open card #step1-->
-					<a href="#" class="card" id="step1">
-						<img src="img/step1_powerless.jpg" alt="Step 1 Powerless. adjective. Destitute of the ability (whether physical, mental, or moral) to act. Drawing shows a crane with a wench that is attached to the top of its own cab." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div> <!--close card #step1-->
-					</a>
-						<a href="#" class="card" id="step2">
-						<img src="img/step2_restore.jpg" alt="Step 2 Restore. verb. To give something back which has been lost or taken. Drawing shows a weathered chain link, of which, one link is shiny and new." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-						<a href="#" class="card" id="step3">
-						<img src="img/step3_decision.jpg" alt="Step 3. Decision. noun. The act of terminating by giving judgement on. Drawing shows a train approaching a fork in the tracks. A woman stands on one of the forks and points, directing the train to the other track." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step4">
-						<img src="img/step4_inventory.jpg" alt="Step 4. Inventory. noun. An account, catalog, or schedule made by the executor of all the goods and chattels and sometimes the real estate, of a deceased person. Drawing shows a completed inventory form, totally up the belongings of the deceased, Miranda Wright." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step5">
-						<img src="img/step5_admit.jpg" alt="Step 5 Admit. verb. To suffer to enter. Drawing shows is from a high point of view, looking down at a massive set of closed doors. A smaller door within one of the doors is open, letting in a ray of light." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step6">
-						<img src="img/step6_ready.jpg" alt="Step 6 Ready. adjective. Prepared for what one is about to do or experience. Drawing shows a squirrel in mid-air with its lil arms outstretched." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step7">
-						<img src="img/step7_remove.jpg" alt="Step 7 Remove. verb. To change or shift a location, position, station or residence of. Drawing a close up of a full sink or bathtub drain, the plug of which has just been pulled, allowing air bubbles up." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step8">
-						<img src="img/step8_harm.jpg" alt="Step 8 Harm. verb. To hurt. Drawing shows the severed head of a flower on a sidewalk in the foreground. The headless plant is in the background." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step9">
-						<img src="img/step9_amends.jpg" alt="Step 9 Amends. noun. Compensation for loss or injury. Drawing shows a hand holding a paintbrush, painting a new picket in a white fence. The broken picket sits in the foreground." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step10">
-						<img src="img/step10_continue.jpg" alt="Step 10 Continue. verb. To remain ina  given place or condition. Drawing shows a chaotic household scene, a fallen lamp, a spilled pitcher, and a hissing cat perched atop a large dog happily sleeping." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step11">
-						<img src="img/step11_conscious.jpg" alt="Step 11. Conscious. noun. Sharing knowledge. And Contact. noun. A union or junction of bodies. Drawing shows a woman with a young boy sitting on her lap. They are reading a book together and their fingers touch on the page." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-					<a href="#" class="card" id="step12">
-						<img src="img/step12_spiritual.jpg" alt="Step 12. Spiritual. adjuective. Of, pertaining to, or consisting of the breath of life. Drawing shows a man underwater. He appears in a joyful pose on his way up to the surface." />
-						<div class="cardText">
-							Adhibenda est munditia, non odiosa neque exquisita nimis.
-						</div>
-					</a>
-				</div> <!--close carousel-two wrapper-->
-				
-			</section> <!--close Right Column-->
 
+						<!--open slick item CAROUSEL-ONE CARD 0-->
+						<div class="cardWrapper cover"> 	
+							<a href="img/pr00_cover.jpg" class="card" id="step1">
+								<img src="img/pr00_cover.jpg" alt="STEPS page 59 - “Big Book” of Alcoholics Anonymous
+								pub. 1939" />
+								<!--open cardText-->
+								<div class="cardText"><br><br>SOURCE<br><br>“Big Book” of Alcoholics Anonymous, p. 83<br><br>pub. 1939
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 0-->
+
+
+						<!--open slick item CAROUSEL-TWO CARD 1-->
+						<div class="cardWrapper freedom"> 
+								
+							<a href="img/pr01_freedom.jpg" class="card" id="pr01">
+								<img src="img/pr01_freedom.jpg" alt="Promise 1. We are going to know a new freedom and a new happiness. Freedom. noun. Not being subject to an arbitrary external power. Drawing shows a fly on a screen door." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>Not being subject to an arbitrary external power.
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+						<!--open slick item CAROUSEL-TWO CARD 2-->
+						<div class="cardWrapper past"> 
+
+								<a href="img/pr02_past.jpg" class="card" id="pr02">
+									<img src="img/pr02_past.jpg" alt="Promise 2. We will not regret the past nor wiish to shut the door on it. Past. noun. A former time or state. Drawing shows small clock on the wall in the place of where a big clock used to be." />
+									<!--open cardText-->
+									<div class="cardText">noun.<br><br>A former time or state.
+									</div> <!--close cardText-->
+								</a>
+							</div> <!--close slick item CARD 2-->
+						<!--open slick item CAROUSEL-TWO CARD 3-->
+						<div class="cardWrapper comprehend"> 
+						
+							<a href="img/pr03_comprehend.jpg" class="card" id="pr03">
+								<img src="img/pr03_comprehend.jpg" alt="Promise 3. We will comprehend the word serenity. Comprehend. verb. To take into the mind. Drawing shows woman standing next to a lake, with ducks." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To take into the mind.
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 3-->
+						<!--open slick item CAROUSEL-TWO CARD 4-->
+						<div class="cardWrapper peace"> 
+
+							<a href="img/pr04_peace.jpg" class="card" id="pr04">
+								<img src="img/pr04_peace.jpg" alt="Promise 4. We will know peace. Peace. noun. A pact or agreement to end hostilities or to come together in amity. Drawing shows the hilts of two swords facing each other and a war-ravaged background." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>A pact or agreement to end hostilities or to come together in amity.
+								</div> <!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 4-->
+						<!--open slick item CAROUSEL-TWO CARD 5-->
+						<div class="cardWrapper scale">
+
+							<a href="img/pr05_scale.jpg" class="card" id="pr05">
+								<img src="img/pr05_scale.jpg" alt="Promise 5. No matter how far down the scale we have gone, we will see how our experiences can benefit others. Scale. noun. Anything graduated, especially when employed as a measure. Drawing shows a person being rescuing." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>Anything graduated, especially when employed as a measure.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 5-->
+						<!--open slick item CAROUSEL-TWO CARD 6-->
+						<div class="cardWrapper disappear">
+
+							<a href="img/pr06_disappear.jpg" class="card" id="pr06">
+								<img src="img/pr06_disappear.jpg" alt="Promise 6. The feeling of uselessness and self-pity will disappear. Disappear. adjective. To cease to come to be in sight. Drawing tracks disappearing in the snow." />
+								<!--open cardText-->
+								<div class="cardText">adj.<br><br>To cease to come to be in sight.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 6-->
+						<!--open slick item CAROUSEL-TWO CARD 7-->
+						<div class="cardWrapper interest">
+
+							<a href="img/pr07_interest.jpg" class="card" id="pr07">
+								<img src="img/pr07_interest.jpg" alt="Promise 7. We will lose interest in selfish things and gain interest in our fellows. Interest. noun. A right, title, share, or participation in a thing. Drawing shows three happy women with their feet in the water." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>A right, title, share, or participation in a thing.
+								</div> 
+								<!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 7-->
+						<!--open slick item CAROUSEL-TWO CARD 8-->
+						<div class="cardWrapper selfseeking">
+
+							<a href="img/pr08_selfseeking.jpg" class="card" id="pr08">
+								<img src="img/pr08_selfseeking.jpg" alt="Promise 8. Self-seeking will slip away. Self-seeking. noun. A search with the object of finding the entire person of the individual who searches. Drawing shows a man using binoculars to look at himself in the mirror." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>A search with the object of finding the entire person of the individual who searches.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 8-->
+						<!--open slick item CAROUSEL-TWO CARD 9-->
+						<div class="cardWrapper outlook">
+							<a href="img/pr09_outlook.jpg" class="card" id="pr09">
+								<img src="img/pr09_outlook.jpg" alt="Promise 9. Our whole attitude and outlook upon life will change. Outlook. noun. A careful looking or watching for any object or event. Drawing shows a woman in the ocean with a snorkle mask on." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>A careful looking or watching for any object or event.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 9-->
+						<!--open slick item CAROUSEL-TWO CARD 10-->
+						<div class="cardWrapper fear">
+
+							<a href="img/pr10_fear.jpg" class="card" id="pr10">
+								<img src="img/pr10_fear.jpg" alt="Promise 10. Fear of people and of economic insecurity will leave us. Fear. noun. Painful emotion marked by alarm, extreme awe, or anticipation of danger. Drawing shows a hand moments after dropping a glass of water."/>
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>Painful emotion marked by alarm, extreme awe, or anticipation of danger.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 10-->
+						<!--open slick item CAROUSEL-TWO CARD 11-->
+						<div class="cardWrapper baffle">
+
+							<a href="img/pr11_baffle.jpg" class="card" id="pr11">
+								<img src="img/pr11_baffle.jpg" alt="Promise 11. We will intuitively know how to handle situations that used to baffle us. Baffle. verb. To check or defeat by perplexing. Drawing shows a lion looking at the legs of many zebra." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To check or defeat by perplexing.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 11-->
+						<!--open slick item CAROUSEL-TWO CARD 12-->
+						<div class="cardWrapper realize">
+
+							<a href="img/pr12_realize.jpg" class="card" id="pr12">
+								<img src="img/pr12_realize.jpg" alt="Promise 12. We will suddently realize that God is doing for us what we could not do for ourselves. Realize. verb. To convert from the imaginary or fictitious into the actual. Drawing shows a hand about to throw paper airplane, the paper of which is made from blueprints of some sort." />
+								<!--open cardText-->
+								<div class="cardText">
+								verb.<br><br>To convert from the imaginary or fictitious into the actual.
+								</div>
+							</a>
+						</div><!--close slick item CARD 12-->
+				</div> <!--close carousel-two  INNER wrapper-->
+				</div> <!--close carousel-two  OUTER wrapper-->
+
+
+				<!--open LABEL for CAROUSEL-THREE-->
+				<div class="carousel-label label-three">
+					<p>Serenity Prayer</p>
+				</div>
+				<!--open CAROUSEL-THREE 			OUTER wrapper-->
+				<div class="carouselOuterWrapper outerThree">
+				<!--open slick CAROUSEL-THREE 	INNER wrapper-->
+					<div id="carousel-three" class="carouselInnerWrapper">
+
+						<!--open slick item CAROUSEL-THREE COVER-->
+						<div class="cardWrapper serCover"> 	
+
+							<a href="img/step1_powerless.jpg" class="card" id="ser0">
+								<img src="img/ser0_cover.jpg" alt="Serenity Prayer Cover"/>
+								<!--open cardText-->
+								<div class="cardText"><br><br>SOURCE<br><br>Dr. Rheinhold Niebuhr*<br><br>pub. 1937<br>*generally agreed
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+						<!--open slick item CAROUSEL-THREE CARD 1-->
+						<div class="cardWrapper god"> 	
+
+							<a href="img/ser1_god.jpg" class="card" id="ser1">
+								<img src="img/ser1_god.jpg" alt="1. God  n. A being or object believed to have more than natural attributes and powers and to require human worship. Drawing shows the shape of a hand defined by the objects around it." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>A being or object believed to have more than natural attributes and powers and to require human worship.
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+						<!--open slick item CAROUSEL-THREE CARD 2-->
+						<div class="cardWrapper grant"> 
+
+								<a href="img/ser2_grant.jpg" class="card" id="ser2">
+									<img src="img/ser2_grant.jpg" alt="2. Grant  v. To consent to carry out for a person. Drawing shows a barbed fence blocking a view of a tropical island." />
+									<!--open cardText-->
+									<div class="cardText">verb.<br><br>To consent to carry out for a person.
+									</div> <!--close cardText-->
+								</a>
+						</div> <!--close slick item CARD 2-->
+						<!--open slick item CAROUSEL-THREE CARD 3-->
+						<div class="cardWrapper serenity"> 
+						
+							<a href="img/ser3_serenity.jpg" class="card" id="ser3">
+								<img src="img/ser3_serenity.jpg" alt="3. Serenity  noun. the quality or state of being clear and free of storms or unpleasant change. Drawing shows a peaceful looking place." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>The quality or state of being clear and free of storms or unpleasant change.
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 3-->
+						<!--open slick item CAROUSEL-THREE CARD 4-->
+						<div class="cardWrapper accept"> 
+
+							<a href="img/ser4_accept.jpg" class="card" id="ser4">
+								<img src="img/ser4_accept.jpg" alt="4. Accept  v.  To receive willingly. Drawing shows umbrella upside-down, catching rain." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To receive willingly.
+								</div> <!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 4-->
+						<!--open slick item CAROUSEL-THREE CARD 5-->
+						<div class="cardWrapper thing">
+
+							<a href="img/ser5_thing.jpg" class="card" id="ser5">
+								<img src="img/ser5_thing.jpg" alt="5. Thing  n.  A matter of concern. Drawing shows something on the ground under an arch."/>
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>A matter of concern.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 5-->	
+						<!--open slick item CAROUSEL-THREE CARD 6-->
+						<div class="cardWrapper can">
+
+							<a href="img/ser6_can.jpg" class="card" id="ser6">
+								<img src="img/ser6_can.jpg" alt="6  Can	 v. to be unable to do otherwise than. Drawing shows a series of complicated pipes." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To be unable to do otherwise than.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 6-->
+						<!--open slick item CAROUSEL-THREE CARD 7-->
+						<div class="cardWrapper not">
+
+							<a href="img/ser7_not.jpg" class="card" id="ser7">
+								<img src="img/ser7_not.jpg" alt="7.  Not adv.  Used as a function word to make negative a group of words or a word. Drawing shows a horse that has chosen not to jump over one obstacle." />
+								<!--open cardText-->
+								<div class="cardText">adverb.<br><br>Used as a function word to make negative a group of words or a word.
+								</div> 
+								<!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 7-->
+						<!--open slick item CAROUSEL-THREE CARD 8-->
+						<div class="cardWrapper change">
+
+							<a href="img/ser8_change.jpg" class="card" id="ser8">
+								<img src="img/ser8_change.jpg" alt="8  Change v.  To make different in some particular. Drawing shows someone lighting a candle wick using a magnifying glass." />
+								<!--open cardText-->
+								<div class="cardText">verb.<br><br>To make different in some particular.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 8-->
+						<!--open slick item CAROUSEL-THREE CARD 9-->
+						<div class="cardWrapper courage">
+							<a href="img/ser9_courage.jpg" class="card" id="ser9">
+								<img src="img/ser9_courage.jpg" alt="9.  Courage n. The heart as the seat of intelligence or emotion (obsolete). Drawing shows a woman trying to run back into a house that is on fire." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>The heart as the seat of intelligence or emotion (obsolete).
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 9-->
+						<!--open slick item CAROUSEL-THREE CARD 10-->
+						<div class="cardWrapper wisdom">
+
+							<a href="img/ser10_wisdom.jpg" class="card" id="ser10">
+								<img src="img/ser10_wisdom.jpg" alt="10. Wisdom  n. Accumulated philosophic or scientific learning. Drawing shows a man whittling a duck from wood. A finished wooden duck sits nearby."/>
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>Accumulated philosophic or scientific learning. 
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 10-->
+						<!--open slick item CAROUSEL-THREE CARD 11-->
+						<div class="cardWrapper know">
+
+							<a href="img/ser11_know.jpg" class="card" id="ser11">
+								<img src="img/ser11_know.jpg" alt="11. Know  v. To perceive directly. Drawing shows a piano tuner with a tuning fork." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>To perceive directly.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 11-->
+						<!--open slick item CAROUSEL-THREE CARD 12-->
+						<div class="cardWrapper difference">
+							<a href="img/ser12_difference.jpg" class="card" id="ser12">
+								<img src="img/ser12_difference.jpg" alt="12. Difference  n.  The quality of being partly or totally unlike in nature, form, or quality. Drawing shows two objects that are similar, inverted: a piece of brocolli and a drawing of a mushroom cloud." />
+								<!--open cardText-->
+								<div class="cardText">noun.<br><br>The quality of being partly or totally unlike in nature, form, or quality.
+								</div>
+							</a>
+						</div><!--close slick item CARD 12-->
+					</div><!--close CAROUSEL-THREE 	INNER wrapper-->
+					</div><!--close CAROUSEL-THREE 	OUTER wrapper-->
+
+
+				<!--open LABEL for CAROUSEL-FOUR-->
+				<div class="carousel-label label-four">
+					<p>Metaphors</p>
+				</div>
+				<!--open CAROUSEL-FOUR 			OUTER wrapper-->
+				<div class="carouselOuterWrapper outerFour">
+					<!--open slick CAROUSEL-FOUR 	INNER wrapper-->
+					<div id="carousel-four" class="carouselInnerWrapper">
+
+						<!--open slick item CAROUSEL-FOUR COVER-->
+						<div class="cardWrapper metaCover"> 	
+							<a href="img/meta0_cover.jpg" class="card" id="meta0">
+								<img src="img/meta0_cover.jpg" alt="TEXT GOES HERE" />
+								<!--open cardText-->
+								<div class="cardText"><br><br>SOURCE<br><br>“Big Book” of Alcoholics Anonymous<br><br>pub. 1939
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item COVER-->
+
+						<!--open slick item CAROUSEL-FOUR CARD 1-->
+						<div class="cardWrapper quicksand"> 	
+							<a href="img/meta1_quicksand.jpg" class="card" id="meta1">
+								<img src="img/meta1_quicksand.jpg" alt="No words can tell of the loneliness and despair I found in that bitter morass of self-pity. Quicksand stretched around me in all directions. – The Big Book,  P.8" />
+								<!--open cardText-->
+								<div class="cardText">No words can tell of the loneliness and despair I found in that bitter morass of self-pity.Quicksand stretched around me in all directions.<br><br>– The Big Book, p. 8
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+
+						<!--open slick item CAROUSEL-FOUR CARD 2-->
+						<div class="cardWrapper rootbranch"> 
+
+							<a href="img/meta2_rootbranch.jpg" class="card" id="meta2">
+								<img src="img/meta2_rootbranch.jpg" alt="I ruthlessly faced my sins and became willing to have my new-found Friend take them away, root and branch. I have not had a drink since. – The Big Book, P. 13" />
+								<!--open cardText-->
+								<div class="cardText">I ruthlessly faced my sins and became willing to have my new-found Friend take them away, root and branch. I have not had a drink since. <br><br>– The Big Book, p. 13
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 2-->
+						<!--open slick item CAROUSEL-FOUR CARD 3-->
+						<div class="cardWrapper mountaintop"> 
+						
+							<a href="img/meta3_mountaintop.jpg" class="card" id="meta3">
+								<img src="img/meta3_mountaintop.jpg" alt="SI felt lifted up, as though the great clean wind of a mountain top blew through and through.  – The Big Book, p.14" />
+								<!--open cardText-->
+								<div class="cardText">I felt lifted up, as though the great clean wind of a mountain top blew through and through.<br><br>– The Big Book, p. 14
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 3-->
+						<!--open slick item CAROUSEL-FOUR CARD 4-->
+						<div class="cardWrapper passengers"> 
+
+							<a href="img/meta4_passengers.jpg" class="card" id="meta4">
+								<img src="img/meta4_passengers.jpg" alt="We are like the passengers of a great liner the moment after rescue from shipwreck when camaraderie, joyousness and democracy pervade the vessel from steerage to Captain’s table. – The Big Book, p. 17" />
+								<!--open cardText-->
+								<div class="cardText">We are like the passengers of a great liner the moment after rescue from shipwreck when camaraderie, joyousness and democracy pervade the vessel from steerage to Captain’s table.<br>– The Big Book, p. 17
+								</div> <!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 4-->
+						<!--open slick item CAROUSEL-FOUR CARD 5-->
+						<div class="cardWrapper reed">
+
+							<a href="img/meta5_reed.jpg" class="card" id="meta5">
+								<img src="img/meta5_reed.jpg" alt="We, in our turn, sought the same escape with all the desperation of drowning men. What seemed at first a flimsy reed, has proved to be the loving and powerful hand of God. – The Big Book, P. 28" />
+								<!--open cardText-->
+								<div class="cardText">We, in our turn, sought the same escape with all the desperation of drowning men. What seemed at first a flimsy reed, has proved to be the loving and powerful hand of God. <br><br>–The Big Book, p. 28
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 5-->	
+						<!--open slick item CAROUSEL-FOUR CARD 6-->
+						<div class="cardWrapper legless">
+
+							<a href="img/meta6_legless.jpg" class="card" id="meta6">
+								<img src="img/meta6_legless.jpg" alt="We are like men who have lost their legs; they never grow new ones.  – The Big Book, p. 30" />
+								<!--open cardText-->
+								<div class="cardText">We are like men who have lost their legs; they never grow new ones.<br><br>– The Big Book, p. 30
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 6-->
+						<!--open slick item CAROUSEL-FOUR CARD 7-->
+						<div class="cardWrapper jaywalker">
+
+							<a href="img/meta7_jaywalker.jpg" class="card" id="meta7">
+								<img src="img/meta7_jaywalker.jpg" alt="Our behavior is as absurd and incomprehensible with respect to the first drink as that of an individual with a passion, say, for jay-walking. – The Big Book p.37" />
+								<!--open cardText-->
+								<div class="cardText">Our behavior is as absurd and incomprehensible with respect to the first drink as that of an individual with a passion, say, for jay-walking.<br><br>– The Big Book, p. 37
+								</div> 
+								<!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 7-->
+						<!--open slick item CAROUSEL-FOUR CARD 8-->
+						<div class="cardWrapper wringer">
+
+							<a href="img/meta8_wringer.jpg" class="card" id="meta8">
+								<img src="img/meta8_wringer.jpg" alt="SHe had felt only the first nip of the wringer. Most alcoholics have to be pretty badly mangled before they really commence to solve their problems. – The Big Book, P. 43" />
+								<!--open cardText-->
+								<div class="cardText">He had felt only the first nip of the wringer. Most alcoholics have to be pretty badly mangled before they really commence to solve their problems.<br><br>– The Big Book, p. 43
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 8-->
+						<!--open slick item CAROUSEL-FOUR CARD 9-->
+						<div class="cardWrapper actors">
+							<a href="img/meta9_actor.jpg" class="card" id="meta9">
+								<img src="img/meta9_actor.jpg" alt="Each person is like an actor who wants to run the whole show; is forever trying to arrange the lights, the ballet, the scenery and the rest of the players in his own way.  – The Big Book, p.60" />
+								<!--open cardText-->
+								<div class="cardText">Each person is like an actor who wants to run the whole show; is forever trying to arrange the lights, the ballet, the scenery and the rest of the players in his own way. <br><br> – The Big Book, p. 60
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 9-->
+						<!--open slick item CAROUSEL-FOUR CARD 10-->
+						<div class="cardWrapper arch">
+
+							<a href="img/meta10_arch.jpg" class="card" id="meta10">
+								<img src="img/meta10_arch.jpg" alt="SHe is the Father, and we are His children. Most good ideas are simple, and this concept was the keystone of the new and triumphant arch through which we passed to freedom. – The Big Book, p64"/>
+								<!--open cardText-->
+								<div class="cardText">He is the Father, and we are His children. Most good ideas are simple, and this concept was the keystone of the new and triumphant arch through which we passed to freedom.<br><br>– The Big Book, p. 64 
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 10-->
+						<!--open slick item CAROUSEL-FOUR CARD 11-->
+						<div class="cardWrapper thread">
+
+							<a href="img/meta11_thread.jpg" class="card" id="meta11">
+
+								<img src="img/meta11_thread.jpg" alt="(Fear) was an evil and corroding thread; the fabric of our existence was shot through with it. It set in motion trains of circumstances which brought us misfortune we felt we didn’t deserve. – The Big Book, P.67" />
+								<!--open cardText-->
+								<div class="cardText">(Fear) was an evil and corroding thread; the fabric of our existence was shot through with it. It set in motion trains of circumstances which brought us misfortune we felt we didn’t deserve.<br><br>– The Big Book, p. 67
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 11-->
+						<!--open slick item CAROUSEL-FOUR CARD 12-->
+						<div class="cardWrapper tornado">
+							<a href="img/meta12_tornado.jpg" class="card" id="meta12">
+
+								<img src="img/meta12_tornado.jpg" alt="(He) is like a tornado roaring his way through the lives of others. Hearts are broken. Sweet relationships are dead. Affections have been uprooted. " />
+								<!--open cardText-->
+								<div class="cardText">(He) is like a tornado roaring his way through the lives of others. Hearts are broken.Sweet relationships are dead. Affections have been uprooted. <br><br>– The Big Book p. 82
+								</div>
+							</a>
+						</div><!--close slick item CARD 12-->
+					</div><!--close CAROUSEL-FOUR 	INNER wrapper-->
+					</div><!--close CAROUSEL-FOUR 	OUTER wrapper-->
+			
+
+				<!--open LABEL for CAROUSEL-FIVE-->
+				<div class="carousel-label label-five">
+					<p>Traditions</p>
+				</div>
+				<!--open CAROUSEL-FIVE			OUTER wrapper-->
+				<div class="carouselOuterWrapper outerFive">
+				<!--open slick CAROUSEL-TWO 	INNER wrapper-->
+				<div id="carousel-five" class="carouselInnerWrapper">
+					
+
+					<!--open slick item CAROUSEL-FIVE CARD 0-->
+						<div class="cardWrapper welfare"> 
+								
+							<a href="img/trad0_cover.jpg" class="card" id="trad1">
+								<img src="img/trad0_cover.jpg" alt="Our common welfare should come first; personal recovery depends upon A.A. unity." />
+								<!--open cardText-->
+								<div class="cardText"><br><br>SOURCE<br><br>“Big Book” of Alcoholics Anonymous, p. 37<br><br>pub. 1939
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+
+					<!--open slick item CAROUSEL-FIVE CARD 1-->
+						<div class="cardWrapper welfare"> 
+								
+							<a href="img/trad1_common.jpg" class="card" id="trad1">
+								<img src="img/trad1_common.jpg" alt="Our common welfare should come first; personal recovery depends upon A.A. unity." />
+								<!--open cardText-->
+								<div class="cardText">Our common welfare should come first; personal recovery depends upon A.A. unity.
+								</div> <!--close cardText-->
+							</a> 
+						</div> <!--close slick item CARD 1-->
+						<!--open slick item CAROUSEL-FIVE CARD 2-->
+						<div class="cardWrapper past"> 
+
+								<a href="img/trad2_conscience.jpg" class="card" id="trad2">
+									<img src="img/trad2_conscience.jpg" alt="For our group purpose there is but one ultimate authority—a loving God as He may express Himself in our group conscience. Our leaders are but trusted servants; they do not govern." />
+									<!--open cardText-->
+									<div class="cardText">For our group purpose there is but one ultimate authority—a loving God as He may express Himself in our group conscience.<br>Our leaders are but trusted servants; they do not govern.
+									</div> <!--close cardText-->
+								</a>
+							</div> <!--close slick item CARD 2-->
+						<!--open slick item CAROUSEL-FIVE CARD 3-->
+						<div class="cardWrapper comprehend"> 
+						
+							<a href="img/trad3_membership.jpg" class="card" id="trad3">
+								<img src="img/trad3_membership.jpg" alt="The only requirement for A.A. membership is a desire to stop drinking." />
+								<!--open cardText-->
+								<div class="cardText">The only requirement for A.A. membership is a desire to stop drinking.
+								</div> <!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 3-->
+						<!--open slick item CAROUSEL-FIVE CARD 4-->
+						<div class="cardWrapper peace"> 
+
+							<a href="img/trad4_affect.jpg" class="card" id="trad4">
+								<img src="img/trad4_affect.jpg" alt="Each group should be autonomous except in matters affecting other groups or A.A. as a whole." />
+								<!--open cardText-->
+								<div class="cardText">Each group should be autonomous except in matters affecting other groups or A.A. as a whole.
+								</div> <!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 4-->
+						<!--open slick item CAROUSEL-FIVE CARD 5-->
+						<div class="cardWrapper scale">
+
+							<a href="img/trad5_message.jpg" class="card" id="trad5">
+								<img src="img/trad5_message.jpg" alt="Each group has but one primary purpose—to carry its message to the alcoholic who still suffers."/>
+								<!--open cardText-->
+								<div class="cardText">Each group has but one primary purpose—to carry its message to the alcoholic who still suffers.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 5-->
+						<!--open slick item CAROUSEL-FIVE CARD 6-->
+						<div class="cardWrapper disappear">
+
+							<a href="img/trad6_endorse.jpg" class="card" id="trad6">
+								<img src="img/trad6_endorse.jpg" alt="An A.A. group ought never endorse, finance, or lend the A.A. name to any related facility or outside enterprise, lest problems of money, property, and prestige divert us from our primary purpose." />
+								<!--open cardText-->
+								<div class="cardText">An A.A. group ought never endorse, finance, or lend the A.A. name to any related facility or outside enterprise, lest problems of money, property, and prestige divert us from our primary purpose.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 6-->
+						<!--open slick item CAROUSEL-FIVE CARD 7-->
+						<div class="cardWrapper interest">
+
+							<a href="img/trad7_selfsupporting.jpg" class="card" id="trad7">
+								<img src="img/trad7_selfsupporting.jpg" alt="Every A.A. group ought to be fully self-supporting, declining outside contributions." />
+								<!--open cardText-->
+								<div class="cardText">Every A.A. group ought to be fully self-supporting, declining outside contributions.
+								</div> 
+								<!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 7-->
+						<!--open slick item CAROUSEL-FIVE CARD 8-->
+						<div class="cardWrapper selfseeking">
+
+							<a href="img/trad8_nonprof.jpg" class="card" id="trad8">
+								<img src="img/trad8_nonprof.jpg" alt="Alcoholics Anonymous should remain forever non-professional, but our service centers may employ special workers." />
+								<!--open cardText-->
+								<div class="cardText">Alcoholics Anonymous should remain forever non-professional, but our service centers may employ special workers.
+								</div><!--close cardText-->
+							</a>
+						</div> <!--close slick item CARD 8-->
+						<!--open slick item CAROUSEL-FIVE CARD 9-->
+						<div class="cardWrapper outlook">
+							<a href="img/trad9_responsible.jpg" class="card" id="trad9">
+								<img src="img/trad9_responsible.jpg" alt="A.A., as such, ought never be organized; but we may create service boards or committees directly responsible to those they serve." />
+								<!--open cardText-->
+								<div class="cardText">A.A., as such, ought never be organized; but we may create service boards or committees directly responsible to those they serve.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 9-->
+						<!--open slick item CAROUSEL-FIVE CARD 10-->
+						<div class="cardWrapper fear">
+
+							<a href="img/trad10_controversy.jpg" class="card" id="trad10">
+								<img src="img/trad10_controversy.jpg" alt="Alcoholics Anonymous has no opinion on outside issues; hence the A.A. name ought never be drawn into public controversy."/>
+								<!--open cardText-->
+								<div class="cardText">Alcoholics Anonymous has no opinion on outside issues; hence the A.A. name ought never be drawn into public controversy.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 10-->
+						<!--open slick item CAROUSEL-FIVE CARD 11-->
+						<div class="cardWrapper baffle">
+
+							<a href="img/trad11_attraction.jpg" class="card" id="trad11">
+								<img src="img/trad11_attraction.jpg" alt="Our public relations policy is based on attraction rather than promotion; we need always maintain personal anonymity at the level of press, radio, and films." />
+								<!--open cardText-->
+								<div class="cardText">Our public relations policy is based on attraction rather than promotion; we need always maintain personal anonymity at the level of press, radio, and films.
+								</div><!--close cardText-->
+							</a>
+						</div><!--close slick item CARD 11-->
+						<!--open slick item CAROUSEL-FIVE CARD 12-->
+						<div class="cardWrapper realize">
+
+							<a href="img/trad12_anonymity.jpg" class="card" id="trad12">
+								<img src="img/trad12_anonymity.jpg" alt="Anonymity is the spiritual foundation of all our traditions, ever reminding us to place principles before personalities." />
+								<!--open cardText-->
+								<div class="cardText">
+								Anonymity is the spiritual foundation of all our traditions, ever reminding us to place principles before personalities.
+								</div>
+							</a>
+						</div><!--close slick item CARD 12-->
+				</div> <!--close carousel-two  INNER wrapper-->
+				</div> <!--close carousel-two  OUTER wrapper-->
+
+			</section> <!--close Right Column-->
 		</div> <!--close "main wrapper"-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="js/slick/slick.min.js"></script>
+		<script src="js/debouncedResize.js"></script>
+		<script src="js/lightbox.js"></script>
 		<script src="js/toggle.js"></script>
 		<script src="js/slider.js"></script>
-	</body>
 	</body>

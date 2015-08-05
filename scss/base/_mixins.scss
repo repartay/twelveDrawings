@@ -1,0 +1,30 @@
+//================================
+// Media Queries
+//================================
+
+@mixin breakpoint($class) {
+
+ /*Extra Small Devices, Phones */ 
+ @if $class == xs {
+    @media (min-width: 500px) { @content; }
+  }
+
+ /*Small Devices, Tablets */
+  @else if $class == sm {
+    @media (min-width: 650px) { @content; }
+  }
+
+ /*Medium Devices, Desktops */
+  @else if $class == md {
+    @media (min-width: 900px) { @content; }
+  }
+
+ /*Large Devices, Wide Screens */
+  @else if $class == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}

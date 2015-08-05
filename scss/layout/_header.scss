@@ -1,22 +1,51 @@
+//================================
+// Header Elements
+//================================
 
 .main-header {
-	width: 100%;
-	display: table;
-	background: url(../img/door_bg.jpg) no-repeat center;
-	background-size: cover;
+	margin-bottom: 0;
+	max-width: 100%;
+	}
 
-}
-
-.main-logo {
+.logo-wrapper {
 	background-color: $gondola;
-	text-align: left;
-	margin: auto;
-	padding: 1em;
-}
+	margin-bottom: 20px;
+	margin: 0;
+	padding-top: 5px;
+	@include breakpoint (md) {
+		background: url(../img/door_bg.jpg) center;
+		background-size: 40%;
+		}
+	}
+
+.logo-wrapper p {
+	float: left;
+	position: absolute;
+	right: 22%;
+	top: 0px;
+	visibility: hidden;
+	@include breakpoint (md) {
+		visibility: visible;	
+		padding-bottom: 20px;
+		}
+	}
 
 .main-splash {
-	padding-bottom: 25%;
-	padding-top: 18%;
-}
+	background: url(../img/door_bg.jpg) no-repeat center;
+	background-size: cover;
+	padding-bottom: 20%;
+	@include breakpoint (sm) {
+		height: 300px;
+		}
+	@include breakpoint (md) {
+		display: none;
+		height: auto;
+		}
+	h2 {
+		margin-top: 0;
+		}
+	}
+
+
 
 

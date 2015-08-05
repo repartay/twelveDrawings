@@ -1,38 +1,108 @@
-h1 {
-	font: 100 2.5em/1.6em $stack-slab;
-	color: white;
-	padding-left: 20px;
-	line-height: 1.6em;
+//================================
+// Styling for All Text Elements
+//================================
 
-}
+h1 {
+	color: white;
+	font-family: $stack-slab;
+	font-size: 2.75em;
+	font-weight: 100;
+	line-height: 1em;
+	margin-top: 16px;
+	max-width: 450px;
+	padding-left: 20px;
+	@include breakpoint (md) {
+		padding: 1em;
+		margin-top: 8px;
+		}
+	}
+
+.logo-wrapper p {
+	padding-left:1em;
+	color: white;
+	font-family: $stack-rway;
+	font-size: 1em;
+	
+	line-height: .7em;
+	& span {
+		color: rgba(194, 224, 255, 1);
+		font-family: $stack-rway;
+		font-size: 2em;
+		line-height: 1.5em;
+		}
+	}
 
 h2 {
-	text-align: center;
 	color: rgb(194, 224, 255);
-	font: 1.8em/1em $stack-slab;
-	
+	font: 200 1.7em/1em $stack-slab;
+	padding-top:40px;
+	text-align: center;
 	& span {
-		font: normal 2em/1.6em $stack-slab;
+		font: normal 200 2em/1.4em $stack-slab;
+		}
 	}
-}
 
 p {
-	text-align: left;
-	font: 600 3em/1.5em $stack-slab;
+	font: 500 2.5em $stack-slab;
+	margin-bottom: 5px;
+	margin-top: 20px;
 	padding-left: 3%;
-	padding-bottom: 5px;
-	margin-bottom: 10px;
-	margin-top: 40px;
-}
+	text-align: left;
+	}
+
+// Carousel Label Text
 
 .label-one p{
-	color: rgba(47,69,80,1);
-} 
+	color: $bluewoodLight;
+	font: 600 2em $stack-slab;
+	} 
 
 .label-two p{
-	color: rgba(95,70,75,1);
-} 
-.cmn-toggle-round-flat {
-	font: 1.8em/1em $stack-slab;
+	color: $buckleyLight;
+	font: 600 2em $stack-slab;
+	} 
+
+.label-three p{
+	color: $oxfordLight;
+	font: 600 2em $stack-slab;
+	} 
+
+.label-four p{
+	color: $portLight;
+	font: 600 2em $stack-slab;
+	} 
+
+.label-five p{
+	color: $copperLight;
+	font: 600 2em $stack-slab;
+	} 
+
+// Background Color for Card Text	
+
+.carouselInnerWrapper .cardText {
+	color: white;
+	font: 100 2em $stack-slab;
+	@include breakpoint (xs) {
+		font: 100 1.1em/1.2em $stack-slab;
+		}
 }
 
+#carousel-one .cardText {
+	background-color: $bluewoodLight;
+	}
+
+#carousel-two .cardText {
+	background-color: $buckleyLight;
+	}
+
+#carousel-three .cardText {
+	background-color: $oxfordLight;
+	}
+
+#carousel-four .cardText {
+	background-color: rgba($port, .85);
+	}
+
+#carousel-five .cardText {
+	background-color: rgba($copper, .85);
+	}

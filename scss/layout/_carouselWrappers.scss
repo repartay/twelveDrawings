@@ -1,13 +1,21 @@
+//================================
+// Carousel Wrappers
+//================================
+
 .carouselOuterWrapper {
+	overflow:hidden;
 	position: relative;
-	overflow: hidden;
-}
+	padding-top:15px;
+	padding-right: 40px;
+	padding-left: 40px;
+	}
 
 .carouselInnerWrapper {
-	position: relative;
-	max-height: 500px;
-	margin: 0;
-	min-width: 200%;
-	overflow: hidden;
-	margin-bottom: 20px;
+	@extend %clearfix;
+	}
+
+.carouselOuterWrapper:last-child {
+	padding-bottom: 50px;
 }
+
+
