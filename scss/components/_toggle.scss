@@ -68,7 +68,7 @@ input.cmn-toggle-round-flat + label:after {
   }
 
 input.cmn-toggle-round-flat + label:before {
-  background-color: white;
+  background-color: $alto;
   border-radius: 40px;
   bottom: 2px;
   bottom: 2px;
@@ -95,6 +95,6 @@ input.cmn-toggle-round-flat:checked + label {
 
 input.cmn-toggle-round-flat:checked + label:after {
   background-color: $grey;
-  margin-left: 40px;
+  margin-left: 38px;
   }
 

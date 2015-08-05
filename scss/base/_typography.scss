@@ -4,7 +4,9 @@
 
 h1 {
 	color: white;
-	font: 100 2.75em/1.6em $stack-slab;
+	font-family: $stack-slab;
+	font-size: 2.75em;
+	font-weight: 100;
 	line-height: 1em;
 	margin-top: 16px;
 	max-width: 450px;
@@ -18,10 +20,15 @@ h1 {
 .logo-wrapper p {
 	padding-left:1em;
 	color: white;
-	font: 1em/.7em bold $stack-rway;
+	font-family: $stack-rway;
+	font-size: 1em;
+	
+	line-height: .7em;
 	& span {
 		color: rgba(194, 224, 255, 1);
-		font: 2em/1.5em $stack-rway;
+		font-family: $stack-rway;
+		font-size: 2em;
+		line-height: 1.5em;
 		}
 	}
 

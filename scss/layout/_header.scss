@@ -21,11 +21,10 @@
 .logo-wrapper p {
 	float: left;
 	position: absolute;
-	right: 275px;
+	right: 22%;
 	top: 0px;
 	visibility: hidden;
 	@include breakpoint (md) {
-		height: 100%;
 		visibility: visible;	
 		padding-bottom: 20px;
 		}

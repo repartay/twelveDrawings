@@ -12,7 +12,9 @@ body {
 
 h1 {
   color: white;
-  font: 100 2.75em/1.6em "Josefin Slab", Times, serif;
+  font-family: "Josefin Slab", Times, serif;
+  font-size: 2.75em;
+  font-weight: 100;
   line-height: 1em;
   margin-top: 16px;
   max-width: 450px;
@@ -26,10 +28,14 @@ h1 {
 .logo-wrapper p {
   padding-left: 1em;
   color: white;
-  font: 1em/0.7em bold "Raleway Dots", Times, serif; }
+  font-family: "Raleway Dots", Times, serif;
+  font-size: 1em;
+  line-height: .7em; }
   .logo-wrapper p span {
     color: #c2e0ff;
-    font: 2em/1.5em "Raleway Dots", Times, serif; }
+    font-family: "Raleway Dots", Times, serif;
+    font-size: 2em;
+    line-height: 1.5em; }
 
 h2 {
   color: #c2e0ff;
@@ -118,13 +124,12 @@ section {
 .logo-wrapper p {
   float: left;
   position: absolute;
-  right: 275px;
+  right: 22%;
   top: 0px;
   visibility: hidden;
   /*Extra Small Devices, Phones */ }
   @media (min-width: 900px) {
     .logo-wrapper p {
-      height: 100%;
       visibility: visible;
       padding-bottom: 20px; } }
 
@@ -409,7 +414,7 @@ input.cmn-toggle-round-flat + label:after {
   top: 0.25em; }
 
 input.cmn-toggle-round-flat + label:before {
-  background-color: white;
+  background-color: #dbdbdb;
   border-radius: 40px;
   bottom: 2px;
   bottom: 2px;
@@ -433,7 +438,7 @@ input.cmn-toggle-round-flat:checked + label {
 
 input.cmn-toggle-round-flat:checked + label:after {
   background-color: #969994;
-  margin-left: 40px; }
+  margin-left: 38px; }
 
 .left-icon i {
   color: #fff;
