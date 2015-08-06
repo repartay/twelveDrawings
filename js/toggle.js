@@ -1,3 +1,8 @@
+
+
+
+
+
 $(".toggler input").on("click", function(e) {
 	//starting w/ image-mode state, switching to text-mode
 	if ( $("body").hasClass("image-mode") ) {

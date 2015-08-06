@@ -1,3 +1,8 @@
+
+
+
+
+
 $(document).ready(function(){
   function runSlider() {
     if ($(window).width() > 499 ) {

@@ -1,3 +1,8 @@
+
+
+
+
+
 //LIGHT BOX OVERLAY
 
 var $overlay = $('<div id="overlay"></div>');
